@@ -1,0 +1,30 @@
+
+.plot { 
+	font: 20px sans-serif;
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	color: #000000;
+	background:-moz-linear-gradient(top, #FFFFFF, #DDDDDD);
+	background:-webkit-gradient(linear,0 0, 0 100%, from(#FFFFFF), to(#DDDDDD));
+}
+
+.plot .title { font-size: 28px; font-weight: bold; }
+.plot .key { fill: lightsteelblue; }
+.plot .res { fill: #C8C8C8; }
+.plot .filter { fill: #E7E7E7; }
+
+
+.plot .marker { stroke: #000; stroke-width: 2px; }
+.plot .xaxis { stroke: #666; stroke-width: .5px; }
+.plot .tick line { stroke: #666; stroke-width: .5px; }
+.plot .range.s0 { fill: #eee; }
+.plot .range.s1 { fill: #ddd; }
+.plot .range.s2 { fill: #ccc; }
+
+
+.plot .measure.s0 { 
+	fill:url(#linearGradient1)
+}
+
+.plot .subtitle { fill: #999; }
+.plot .setTitle { fill: #abc; }
