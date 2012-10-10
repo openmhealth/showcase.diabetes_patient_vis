@@ -1,15 +1,14 @@
 console.log('cmp')
 
-pvis.default = {}
-pvis.default.timestamp = function(v) {
+pvis.timestamp = function(v) {
 	return new Date(v.metadata.timestamp);
 }
 
-pvis.default.compare = function(r,k) {
+pvis.compare = function(r,k) {
 	return utils.compareDates(this.resTime(r), this.keyTime(k), this.duration, this.offset);
 }
 
-pvis.default.calculate = function() {	
+pvis.calculate = function() {	
 	var self = this;
 	
 	if(!omh.data[this.from.payload_id] || !omh.data[self.to]) {
@@ -62,12 +61,12 @@ pvis.cmp = [
 		"offset": 0.5,
 		
 		"filter": pvis.pam.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.pam.value,
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.notes.value,
-		"compare": pvis.default.compare,
-		"calculate": pvis.default.calculate,
+		"compare": pvis.compare,
+		"calculate": pvis.calculate,
 		"visualize": pvis.notes.visualize
 	},
 	{
@@ -78,12 +77,12 @@ pvis.cmp = [
 		"offset": 0.5,
 		
 		"filter": pvis.pam.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.pam.value,
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.notes.value,
-		"compare": pvis.default.compare,
-		"calculate": pvis.default.calculate,
+		"compare": pvis.compare,
+		"calculate": pvis.calculate,
 		"visualize": pvis.notes.visualize
 	},
 	{
@@ -94,12 +93,12 @@ pvis.cmp = [
 		"offset": 0.9,
 		
 		"filter": pvis.pam.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.pam.value,
-		"resTime": pvis.default.timestamp,
+		"resTime": pvis.timestamp,
 		"resValue": pvis.runkeeper.value,
 		"compare": pvis.runkeeper.compare,
-		"calculate": pvis.default.calculate,
+		"calculate": pvis.calculate,
 		"visualize": pvis.runkeeper.visualize
 	},
 	{
@@ -110,12 +109,12 @@ pvis.cmp = [
 		"offset": 0.9,
 		
 		"filter": pvis.pam.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.pam.value,
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.food.value,
-		"compare": pvis.default.compare,
-		"calculate": pvis.default.calculate,
+		"compare": pvis.compare,
+		"calculate": pvis.calculate,
 		"visualize": pvis.food.visualize
 	},
 	{
@@ -126,12 +125,12 @@ pvis.cmp = [
 		"offset": 0.9,
 		
 		"filter": pvis.pam.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.pam.value,
-		"resTime": pvis.default.timestamp,
+		"resTime": pvis.timestamp,
 		"resValue": pvis.sleep.value,
-		"compare": pvis.default.compare,
-		"calculate": pvis.default.calculate,
+		"compare": pvis.compare,
+		"calculate": pvis.calculate,
 		"visualize": pvis.sleep.visualize
 	},
 	{
@@ -142,12 +141,12 @@ pvis.cmp = [
 		"offset": 0.1,
 		
 		"filter": pvis.pam.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.pam.value,
-		"resTime": pvis.default.timestamp,
+		"resTime": pvis.timestamp,
 		"resValue": pvis.weight.value,
-		"compare": pvis.default.compare,
-		"calculate": pvis.default.calculate,
+		"compare": pvis.compare,
+		"calculate": pvis.calculate,
 		"visualize": pvis.notes.visualize
 	},
 	{
@@ -158,12 +157,12 @@ pvis.cmp = [
 		"offset": 0.9,
 		
 		"filter": pvis.pam.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.pam.value,
-		"resTime": pvis.default.timestamp,
+		"resTime": pvis.timestamp,
 		"resValue": pvis.glucose.value,
-		"compare": pvis.default.compare,
-		"calculate": pvis.default.calculate,
+		"compare": pvis.compare,
+		"calculate": pvis.calculate,
 		"visualize": pvis.glucose.visualize
 	},
 	{
@@ -174,12 +173,12 @@ pvis.cmp = [
 		"offset": 0.9,
 		
 		"filter": pvis.glucose.filter,
-		"keyTime": pvis.default.timestamp,
+		"keyTime": pvis.timestamp,
 		"keyValue": pvis.glucose.value,
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.food.value,
-		"compare": pvis.default.compare,
-		"calculate": pvis.default.calculate,
+		"compare": pvis.compare,
+		"calculate": pvis.calculate,
 		"visualize": pvis.food.visualize
 	}
 
