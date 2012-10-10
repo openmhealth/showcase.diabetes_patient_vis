@@ -25,18 +25,17 @@ pvis.plot = function(cmp) {
 	var keyTitle = enter.append("g")
 	
 	keyTitle.append("rect")
-	.attr("class","res")
-		.attr("height", 50)
-	.attr("width", width);
+			.attr("class","res")
+			.attr("height", 50)
+			.attr("width", width);
 
-				
 	var titleBack = keyTitle.append("rect")
-		.attr("class", "key")
+			.attr("class", "key")
 		  .attr("height", 50);
 			
-		var titleArrow = keyTitle.append("svg:path")
-					.attr("d", function(d) { return "M 0 0 C30,35 30,15 0,50" })
-					.attr("class", "key");
+	var titleArrow = keyTitle.append("svg:path")
+			.attr("d", function(d) { return "M 0 0 C30,35 30,15 0,50" })
+			.attr("class", "key");
 
 	var title = keyTitle.append("text")
 			.attr("class", "title")
@@ -57,30 +56,26 @@ pvis.plot = function(cmp) {
 			.attr("height", "55")
 	    .attr("transform", "translate(" + (width - margin.left) + "," + 0 + ")")
 			
-			resTitle.append("text")
-			    .attr("class", "title")
-					.attr("y", 35)
-			    .text(function(d) { return omh.payloads[d.to].title; })
-					
-					var filterTitle = enter.append("g")
-							.attr("height", "23")
-					    .attr("transform", "translate(" + 0 + "," + 50 + ")")
+	resTitle.append("text")
+			.attr("class", "title")
+			.attr("y", 35)
+			.text(function(d) { return omh.payloads[d.to].title; })
+
+	var filterTitle = enter.append("g")
+			.attr("height", "23")
+			.attr("transform", "translate(" + 0 + "," + 50 + ")")
 							
-							
-							filterTitle.append("rect")
-		.attr("class", "filter")
+	filterTitle.append("rect")
+			.attr("class", "filter")
 		  .attr("height", 23)
 			.attr("width", width);
 			
-			filterTitle.append("text")
+	filterTitle.append("text")
 			.attr("y", 18)
 			.attr("x", 10)
-			    .text(function(d) { return d.from.key_title(d.key); })
+			.text(function(d) { return d.from.key_title(d.key); })
 
-			
 	defineFilters(container);
-	
-
 
 	container.append("g")
 			.attr("transform", "translate(" + margin.left + ",0)")
@@ -116,26 +111,6 @@ function defineFilters(container) {
 		.attr("offset", "100%")
 		.attr("stop-color","#666")
 		.attr("stop-opacity",1);
-		
-	
-	var blueToBlack = container.append("svg:defs")
-		.append("svg:linearGradient")
-			.attr("id", "blueToBlack")
-			.attr("x1","0%")
-			.attr("y1","0%")
-			.attr("x2","0%")
-			.attr("y2","100%")
-			.attr("spreadMethod","pad");
-
-	blueToBlack.append("stop")
-		.attr("offset", "0%")
-		.attr("stop-color","lightsteelblue")
-		.attr("stop-opacity",1);
-
-	blueToBlack.append("stop")
-		.attr("offset", "100%")
-		.attr("stop-color","#363D48")
-		.attr("stop-opacity",1);
 }
 
 function simpleChart() {
@@ -149,9 +124,6 @@ function simpleChart() {
       g = d3.select(this);
 			
 			var data = d.calculate();
-
-			console.log("data")
-			console.log(data)
 
 			if(!data) {
 				// If there is no data, we just say no data
@@ -174,63 +146,46 @@ function simpleChart() {
 
 			// Add the pam marker line
 			var marker = g.selectAll("marker")
-				.data([d])
-			.enter().append("g");
+					.data([d])
+				.enter().append("g");
 
 			var bubble = marker.append("rect")
-			.attr("height",80)
-			.attr("rx",5)
-			.attr("ry",5)
-			.attr("fill","#A2A2A2")
+					.attr("height",80)
+					.attr("rx",5)
+					.attr("ry",5)
+					.attr("fill","#A2A2A2")
 			
 			var bubbleContent = marker.append("g")
 
 			bubbleContent.append("image")
-			.attr("width",50)
-			.attr("height",50)
-			.attr("xlink:href", "images/pam/"+data.key.value.photo_id+"_"+data.key.value.mood+"/"+data.key.value.photo_id+"_"+data.key.value.sub_photo_id+".jpg");
+					.attr("width",50)
+					.attr("height",50)
+					.attr("xlink:href", "images/pam/"+data.key.value.photo_id+"_"+data.key.value.mood+"/"+data.key.value.photo_id+"_"+data.key.value.sub_photo_id+".jpg");
 			
 			var key = bubbleContent.append("text")
-			.attr("y", 70)
-			.attr("x", 25)
-			.attr("text-anchor","middle")
-			.text(data.key.value.mood)
-			
-			
+					.attr("y", 70)
+					.attr("x", 25)
+					.attr("text-anchor","middle")
+					.text(data.key.value.mood)
+				
 			var titleLength = Math.max(60, key.node().getComputedTextLength());
 			
-			bubbleContent
-				.attr("transform", "translate(" + ((titleLength- 60 + 10)/2) + ",5)")
-			
+			bubbleContent.attr("transform", "translate(" + ((titleLength- 60 + 10)/2) + ",5)")
 			bubble.attr("width" ,  titleLength)
-			
-
 			
 			var bottom = height - margin.bottom;
 			
-
 			bubbleWidth= bubble.node().getBBox().width;
 
-
 			marker.attr("transform", function(d) { return "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")";});
-
-
 
 			marker.append("svg:line")
 					.attr("transform", "translate(" + bubbleWidth / 2 + ")")
 			    .attr("class", "marker")
 			    .attr("y1", 76)
 			    .attr("y2", bottom - 80)
-					
-					
-
-
-					
 
 			d.visualize(g, d, data, x0);
-
-
-
 
       // Compute the tick format.
       var format = x0.tickFormat(8);
@@ -238,7 +193,6 @@ function simpleChart() {
       // Update the tick groups.
       var tick = g.selectAll("g.tick")
           .data(x0.ticks(4));
-					
 
       // Initialize the ticks with the old scale, x0.
       var tickEnter = tick.enter().append("svg:g")
