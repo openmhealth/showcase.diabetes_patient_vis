@@ -12,7 +12,6 @@ function bubble(g, dx) {
 	  var text = this.group.append("text")
 
 		lines.each(function(line, i) {
-			console.log(i)
 			text.append("tspan")
 			.attr("x", dx)
 			.attr("dy", (i) ? "1.5em" : "1em")

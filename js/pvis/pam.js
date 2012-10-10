@@ -15,7 +15,6 @@ pvis.pam.value = function(v) {
 }
 
 pvis.pam.filter = function(v) {
-	console.log("mood " + this.keyValue(v).mood + " in " + this.key)
 	return $.inArray(this.keyValue(v).mood, this.key) != -1;
 }
 
@@ -27,9 +26,4 @@ pvis.pam.key_title = function(key) {
 	} else {
 		return key;
 	}
-}
-
-pvis.pam.visualize = function(g, d, data, scale) {
-	console.log("data")
-	console.log(data)
 }

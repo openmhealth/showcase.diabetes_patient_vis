@@ -19,8 +19,6 @@ pvis.plot = function(cmp) {
 			
 	var enter = container.enter().append("svg")
 	    .attr("class", "plot")
-	    .attr("width", width)
-	    .attr("height", height)
 			.attr("viewBox", "0 0 " + width + " " + height)
 			.attr("preserveAspectRatio", "xMinYMin");
 
@@ -62,7 +60,7 @@ pvis.plot = function(cmp) {
 			resTitle.append("text")
 			    .attr("class", "title")
 					.attr("y", 35)
-			    .text(function(d) { console.log("d");console.log(d); return omh.payloads[d.to].title; })
+			    .text(function(d) { return omh.payloads[d.to].title; })
 					
 					var filterTitle = enter.append("g")
 							.attr("height", "23")
