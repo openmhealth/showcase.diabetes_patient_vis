@@ -15,11 +15,11 @@ pvis.food.value = function(v) {
 }
 
 pvis.food.visualize = function(g, d, data, scale) {
-  var note = g.append("g")
-      .attr("text-anchor", "middle")
-      .attr("transform", "translate(0,190)");
 
-  note.append("text")
-			.attr("dx", scale(data.res.timestamp))
-      .text(data.res.value.carbNote)
+	var b = new bubble(g, scale(data.res.timestamp));
+	b.addText([
+		"Carbs: " + data.res.value.carbNote + " " + data.res.value.carbCount + "g",
+		"Fat: " + data.res.value.fatNote + " " + data.res.value.fatCount + "g",
+		"Protien: " + data.res.value.proteinNote + " " + data.res.value.proteinCount + "g"
+		]);
 }
