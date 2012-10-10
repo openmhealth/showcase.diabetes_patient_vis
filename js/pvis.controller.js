@@ -29,7 +29,10 @@ pvis.controller = function(){
 							$.mobile.hidePageLoadingMsg();
 							pvis.plot(pvis.cmp);
 						}
-		      }
+		      },
+					failure:function(e) {
+						alert("There was a server error " + e.responseText);
+					}
 				})
 			});
 
