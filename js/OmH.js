@@ -1,5 +1,7 @@
 if(!omh) var omh = {}
 
+var AUTH_TOKEN_ERROR = "0200"
+
 omh.init = function(baseurl, requester){
   omh.baseurl = baseurl
   omh.requester = requester
@@ -66,18 +68,26 @@ omh.read = function(payloadID, payloadVersion, optional){
     url: url,
     data:data,
     type:'POST',
-    success: optional.success,
-    failure:function(res){
-      alert(res)
-      if(optional.failure)
-        optional.failure(res)
-    }
-  })
+    success: optional.success
+  }).fail(function(jqXHR, textStatus) {
+		
+		console.log(jqXHR)
+		
+		res = $.parseJSON(jqXHR.responseText)
+    $.each(res.errors,function(i, error){
+			if(error.code == AUTH_TOKEN_ERROR) {
+				console.log("Authentication Error")
+				omh.logout();
+			}
+    })
+
+    if(optional.failure)
+      optional.failure(jqXHR, textStatus)
+	});
 }
 
-omh.logout = function(callback){
+omh.logout = function(){
 	localStorage.removeItem('omh.token')
   localStorage.removeItem('omh.username')
-  if(callback && callback.success)
-    callback.success()
+	window.location.reload();
 }

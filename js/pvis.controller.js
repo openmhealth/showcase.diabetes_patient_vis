@@ -8,7 +8,7 @@ pvis.controller = function(){
     
     //login
     $('#loginButton').click(self.signIn)
-    $('#logoutButton').click(self.logout)
+    $('#logoutButton').click(omh.logout)
 		
 		
     if(!omh.token())
@@ -29,7 +29,8 @@ pvis.controller = function(){
 							$.mobile.hidePageLoadingMsg();
 							pvis.plot(pvis.cmp);
 						}
-		      }})
+		      }
+				})
 			});
 
     }
@@ -51,13 +52,5 @@ pvis.controller = function(){
     return false
   }
 
-	self.logout = function() {
-		omh.logout({
-		  success:function(){
-				window.location.reload();
-		  }
-		});
-	}
-  
   return self;
 }.call()
