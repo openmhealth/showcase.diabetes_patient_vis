@@ -10,10 +10,13 @@ pvis.controller = function(){
     $('#loginButton').click(self.signIn)
     $('#logoutButton').click(self.logout)
 		
+		
     if(!omh.token())
       pvis.ui.showLoginDialog()
     else{
 			$("#username").text(omh.username());
+			
+			$.mobile.showPageLoadingMsg();
 			
 			$.each(omh.payloads, function(k,v) {
 		    omh.read(
@@ -23,6 +26,7 @@ pvis.controller = function(){
 		        console.log("read response",res)
 						omh.data[k] = res.data;
 						if(omh.data.pam && omh.data.runkeeper && omh.data.notes && omh.data.food && omh.data.sleep && omh.data.glucose && omh.data.weight) {
+							$.mobile.hidePageLoadingMsg();
 							pvis.plot(pvis.cmp);
 						}
 		      }})

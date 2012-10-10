@@ -8,11 +8,14 @@ pvis.runkeeper.value = function(v) {
 }
 
 pvis.runkeeper.compare = function(r,k) {
-	console.log("r=")
-	console.log(r.metadata.timestamp)
-	console.log("k=")
-	console.log(k.metadata.timestamp)
-	return utils.compareDates(this.resTime(r), this.keyTime(k), this.duration, this.offset);
+	var begin = utils.compareDates(r.data.start_time, this.keyTime(k), this.duration, this.offset);
+	var end = utils.compareDates(new Date(r.data.start_time).getTime() + r.data.duration, this.keyTime(k), this.duration, this.offset);
+	
+	if(begin == 0 || end == 0) {
+		return 0;
+	}
+	
+	return begin + end;
 }
 
 pvis.runkeeper.visualize = function(g, d, data, scale) {

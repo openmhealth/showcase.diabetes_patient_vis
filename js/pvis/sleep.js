@@ -10,22 +10,10 @@ pvis.sleep.value = function(v) {
 
 pvis.sleep.visualize = function(g, d, data, scale) {
 
-  var note = g.append("g")
-      .attr("text-anchor", "right")
-      .attr("transform", "translate(0,170)");
-
-  var text = note.append("text")
-
-	text.append("tspan")
-			.text("Lying Down: " + utils.toClock(data.res.value.totalLying));
-
-	text.append("tspan")
-			.attr("x",0)
-			.attr("dy", "1em")
-			.text("Sleeping: " + utils.toClock(data.res.value.totalSleep));
-						
-	text.append("tspan")
-			.attr("x",0)
-			.attr("dy", "1em")
-			.text("Sleep Efficiency: " + data.res.value.efficiency + "%");
+	var b = new bubble(g, scale(data.res.timestamp));
+	b.addText([
+			"Lying Down: " + utils.toClock(data.res.value.totalLying),
+			"Sleeping: " + utils.toClock(data.res.value.totalSleep),
+			"Sleep Efficiency: " + data.res.value.efficiency + "%"
+		]);
 }

@@ -23,7 +23,6 @@ pvis.default.calculate = function() {
 		if(self.filter(v)) {
 			$.each(omh.data[self.to], function(i2,v2) {
 				var res = self.compare(v2,v,self.duration,self.offset);
-				console.log("res="+res)
 				if(res < 0) {
 					return false;
 				} else if(res == 0) {
@@ -149,7 +148,7 @@ pvis.cmp = [
 		"resValue": pvis.weight.value,
 		"compare": pvis.default.compare,
 		"calculate": pvis.default.calculate,
-		"visualize": pvis.weight.visualize
+		"visualize": pvis.notes.visualize
 	},
 	{
 		"from": pvis.pam,

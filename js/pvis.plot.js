@@ -214,6 +214,10 @@ function simpleChart() {
 			bubbleWidth= bubble.node().getBBox().width;
 
 
+			marker.attr("transform", function(d) { return "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")";});
+
+
+
 			marker.append("svg:line")
 					.attr("transform", "translate(" + bubbleWidth / 2 + ")")
 			    .attr("class", "marker")
@@ -223,12 +227,11 @@ function simpleChart() {
 					
 
 
-		      marker.attr("transform", function(d) { return "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")";});
 					
 
-
-
 			d.visualize(g, d, data, x0);
+
+
 
 
       // Compute the tick format.
@@ -286,3 +289,4 @@ function translate(x) {
     return "translate(" + x(d) + ",0)";
   };
 }
+
