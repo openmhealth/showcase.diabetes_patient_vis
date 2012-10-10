@@ -43,13 +43,15 @@ pvis.plot = function(cmp) {
 			.attr("y", 35)
 	    .text(function(d) { return omh.payloads[d.from.payload_id].title; });
 	
-	var titleLength = title.node().getComputedTextLength() + 20;
+	var titleLength = title.node().getComputedTextLength();
 	
-	titleBack
-			.attr("width", titleLength)
-			
-	titleArrow
-			.attr("transform", "translate(" + (titleLength-0.5) + ",0)")
+	var texts = keyTitle.select("text")
+	
+	texts.each(function(v,i) {
+			var titleLength = texts[0][i].getComputedTextLength()+20;
+			d3.select(titleBack[0][i]).attr("width",titleLength)
+			d3.select(titleArrow[0][i]).attr("transform", "translate(" + ((titleLength-0.5)) + ",0)")
+	})
 	
 	var resTitle = enter.append("g")
 			.attr("text-anchor", "end")
