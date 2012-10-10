@@ -165,6 +165,22 @@ pvis.cmp = [
 		"compare": pvis.default.compare,
 		"calculate": pvis.default.calculate,
 		"visualize": pvis.glucose.visualize
+	},
+	{
+		"from": pvis.glucose,
+		"to": "food",
+		"key": ">= 150",
+		"duration": 7200000,
+		"offset": 0.9,
+		
+		"filter": pvis.glucose.filter,
+		"keyTime": pvis.default.timestamp,
+		"keyValue": pvis.glucose.value,
+		"resTime": pvis.campaign.timestamp,
+		"resValue": pvis.food.value,
+		"compare": pvis.default.compare,
+		"calculate": pvis.default.calculate,
+		"visualize": pvis.food.visualize
 	}
-	
+
 ]

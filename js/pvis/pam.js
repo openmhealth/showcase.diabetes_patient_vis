@@ -1,5 +1,4 @@
 pvis.pam = {}
-pvis.pam.title = "PAM";
 pvis.pam.payload_id = "pam";
 
 pvis.pam.value = function(v) {

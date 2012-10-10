@@ -41,7 +41,7 @@ pvis.plot = function(cmp) {
 			.attr("class", "title")
 			.attr("x", 10)
 			.attr("y", 35)
-	    .text(function(d) { return d.from.title });
+	    .text(function(d) { return omh.payloads[d.from.payload_id].title; });
 	
 	var titleLength = title.node().getComputedTextLength() + 20;
 	
@@ -157,6 +157,10 @@ function simpleChart() {
 			
 			var bubbleContent = marker.append("g")
 
+			var bottom = height - margin.bottom;
+
+
+			if(d.from.payload_id == "pam") {
 			bubbleContent.append("image")
 					.attr("width",50)
 					.attr("height",50)
@@ -173,7 +177,6 @@ function simpleChart() {
 			bubbleContent.attr("transform", "translate(" + ((titleLength- 60 + 10)/2) + ",5)")
 			bubble.attr("width" ,  titleLength)
 			
-			var bottom = height - margin.bottom;
 			
 			bubbleWidth= bubble.node().getBBox().width;
 
@@ -184,6 +187,33 @@ function simpleChart() {
 			    .attr("class", "marker")
 			    .attr("y1", 76)
 			    .attr("y2", bottom - 80)
+
+			} else {
+
+				var key = bubbleContent.append("text")
+						.attr("y", 70)
+						.attr("x", 25)
+						.attr("text-anchor","middle")
+						.text(data.key.value.glucose)
+				
+				var titleLength = Math.max(60, key.node().getComputedTextLength());
+			
+				bubbleContent.attr("transform", "translate(" + ((titleLength- 60 + 10)/2) + ",5)")
+				bubble.attr("width" ,  titleLength)
+			
+			
+				bubbleWidth= bubble.node().getBBox().width;
+
+				marker.attr("transform", function(d) { return "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")";});
+
+				marker.append("svg:line")
+						.attr("transform", "translate(" + bubbleWidth / 2 + ")")
+				    .attr("class", "marker")
+				    .attr("y1", 76)
+				    .attr("y2", bottom - 80)
+				
+			}
+			
 
 			d.visualize(g, d, data, x0);
 
