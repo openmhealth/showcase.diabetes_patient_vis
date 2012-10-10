@@ -192,8 +192,9 @@ function simpleChart() {
 
 			} else {
 
+				bubble.attr("height",30)
 				var key = bubbleContent.append("text")
-						.attr("y", 70)
+						.attr("y", 18)
 						.attr("x", 25)
 						.attr("text-anchor","middle")
 						.text(data.key.value.glucose)
@@ -211,7 +212,7 @@ function simpleChart() {
 				marker.append("svg:line")
 						.attr("transform", "translate(" + bubbleWidth / 2 + ")")
 				    .attr("class", "marker")
-				    .attr("y1", 76)
+				    .attr("y1", 26)
 				    .attr("y2", bottom - 80)
 				
 			}
