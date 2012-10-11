@@ -1,5 +1,6 @@
 pvis.controller = function(){
   var self = {}
+  self.data = {};
 
   $(document).ready(function(){
 
@@ -23,19 +24,31 @@ pvis.controller = function(){
           v.version,
           {success:function(res){
             console.log("read response",res)
-            omh.data[k] = res.data;
-            if(omh.data.pam && omh.data.runkeeper && omh.data.notes && omh.data.food && omh.data.sleep && omh.data.glucose && omh.data.weight) {
-              $.mobile.hidePageLoadingMsg();
-              pvis.plot(pvis.cmp);
-            }
+            pvis.controller.data[k] = res.data;
+            self.checkData();
           },
           failure:function(e) {
-            alert("There was a server error " + e.responseText);
+            pvis.controller.data[k] = {}
+            self.checkData();
           }
         })
       });
     }
   })
+
+  self.checkData = function() {
+    var count = 0
+    for(var i in pvis.controller.data) {
+        if (pvis.controller.data.hasOwnProperty(i)) {
+            count += 1;
+        }
+    }
+
+    if(count == 7) {
+      $.mobile.hidePageLoadingMsg();
+      pvis.plot(pvis.cmp);
+    }
+  }
 
   self.signIn = function(){
     var user = $('#loginDialog #username').val()

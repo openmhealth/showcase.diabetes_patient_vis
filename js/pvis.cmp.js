@@ -11,16 +11,16 @@ pvis.compare = function(r,k) {
 pvis.calculate = function() {	
 	var self = this;
 	
-	if(!omh.data[this.from.payload_id] || !omh.data[self.to]) {
+	if(!pvis.controller.data[this.from.payload_id] || !pvis.controller.data[self.to]) {
 		return;
 	}
 	
 	var data;
 	
-	$.each(omh.data[self.from.payload_id], function(i,v) {
+	$.each(pvis.controller.data[self.from.payload_id], function(i,v) {
 		// Search instances of this key
 		if(self.filter(v)) {
-			$.each(omh.data[self.to], function(i2,v2) {
+			$.each(pvis.controller.data[self.to], function(i2,v2) {
 				var res = self.compare(v2,v,self.duration,self.offset);
 				if(res < 0) {
 					return false;
