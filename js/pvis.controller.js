@@ -45,7 +45,7 @@ pvis.controller = function(){
       return false;
     }
 
-    $('#loginDialog .msg').text('Signing In...')
+    $('#loginDialog .msg').css('color','black').text('Signing In...')
 
     omh.authenticate(user,password,{
       success:function(){

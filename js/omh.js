@@ -43,15 +43,16 @@ omh.authenticate = function(user, password, callback){
       omh.token(res.auth_token)
       if(callback && callback.success)
         callback.success(res)
-    }
-    else{
-      $.each(res.errors,function(){
-        console.log(this)
-      })
+    } else {
       if(callback && callback.failure)
         callback.failure(res)
     }
-  })
+  }).fail(function(jqXHR, textStatus) {
+
+    res = $.parseJSON(jqXHR.responseText)
+    if(callback && callback.failure)
+      callback.failure(res)
+  });
 }
 
 omh.read = function(payloadID, payloadVersion, optional){
