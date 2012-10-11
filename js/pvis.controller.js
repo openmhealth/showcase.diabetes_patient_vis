@@ -40,9 +40,15 @@ pvis.controller = function(){
   })
 
   self.signIn = function(){
-    $('#loginDialog .msg').text('Signing In...')
     var user = $('#loginDialog #username').val()
     var password = $('#loginDialog #password').val()
+
+    if(!user || !password) {
+      return false;
+    }
+
+    $('#loginDialog .msg').text('Signing In...')
+
 		omh.authenticate(user,password,{
 		  success:function(){
 				window.location.reload();
