@@ -74,14 +74,16 @@ omh.read = function(payloadID, payloadVersion, optional){
 		console.log(jqXHR)
 		
 		res = $.parseJSON(jqXHR.responseText)
+		var autherror = false;
     $.each(res.errors,function(i, error){
 			if(error.code == AUTH_TOKEN_ERROR) {
 				console.log("Authentication Error")
 				omh.logout();
+				autherror = true;
 			}
     })
 
-    if(optional.failure)
+    if(!autherror && optional.failure)
       optional.failure(jqXHR, textStatus)
 	});
 }
