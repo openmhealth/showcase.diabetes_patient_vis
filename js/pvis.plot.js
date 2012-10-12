@@ -61,7 +61,7 @@ pvis.plot = function(cmp) {
 	resTitle.append("text")
 			.attr("class", "title")
 			.attr("y", 35)
-			.text(function(d) { return omh.payloads[d.to].title; })
+			.text(function(d) { return omh.payloads[d.to.payload_id].title; })
 
 	var filterTitle = enter.append("g")
 			.attr("height", "23")

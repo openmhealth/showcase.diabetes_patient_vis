@@ -1,4 +1,6 @@
 pvis.runkeeper = {}
+pvis.runkeeper.payload_id = "runkeeper";
+
 pvis.runkeeper.value = function(v) {
 	return {
 		'duration': v.data.duration,

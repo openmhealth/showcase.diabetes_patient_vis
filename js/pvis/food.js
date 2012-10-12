@@ -1,4 +1,5 @@
 pvis.food = {}
+pvis.food.payload_id = "food";
 
 pvis.food.fullness = [
 	"Still Hungry",

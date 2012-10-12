@@ -9,7 +9,7 @@ pam.negative = ["afraid", "tense", "frustrated", "angry", "miserable", "sad", "g
 pvis.cmp = [
 	{
 		"from": pvis.pam,
-		"to": "notes",
+		"to": pvis.notes,
 		"key": pam.positive,
 		"duration": 3600000,
 		"offset": 0.5,
@@ -21,7 +21,7 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
-		"to": "notes",
+		"to": pvis.notes,
 		"key": pam.negative,
 		"duration": 3600000,
 		"offset": 0.5,
@@ -33,7 +33,7 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
-		"to": "runkeeper",
+		"to": pvis.runkeeper,
 		"key": pam.positive,
 		"duration": 10800000,
 		"offset": 0.9,
@@ -45,7 +45,7 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
-		"to": "food",
+		"to": pvis.food,
 		"key": ["tired","sleepy"],
 		"duration": 3600000,
 		"offset": 0.9,
@@ -57,7 +57,7 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
-		"to": "sleep",
+		"to": pvis.sleep,
 		"key": ["tired"],
 		"duration": 64800000,
 		"offset": 0.9,
@@ -69,7 +69,7 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
-		"to": "weight",
+		"to": pvis.weight,
 		"key": ["tired"],
 		"duration": 64800000,
 		"offset": 0.1,
@@ -81,7 +81,7 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
-		"to": "glucose",
+		"to": pvis.glucose,
 		"key": ["tired","sleepy","gloomy"],
 		"duration": 3600000,
 		"offset": 0.9,
@@ -93,7 +93,7 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.glucose,
-		"to": "food",
+		"to": pvis.food,
 		"key": ">= 150",
 		"duration": 7200000,
 		"offset": 0.9,

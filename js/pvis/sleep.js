@@ -1,4 +1,6 @@
 pvis.sleep = {}
+pvis.sleep.payload_id = "sleep"
+
 pvis.sleep.value = function(v) {
 	return {
 		'timestamp': new Date(v.metadata.timestamp),
