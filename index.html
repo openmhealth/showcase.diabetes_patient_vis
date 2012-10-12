@@ -1,49 +1,48 @@
-
 <!--
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
 <html>
-		<head>
-		    <meta charset="utf-8" />
-		    <meta name="viewport" content="width=device-width, initial-scale=1" />
-		    <title>
-					My Comparisons
-		    </title>
-		    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
-		    <link href="css/app.css" media="all" type="text/css" rel="stylesheet"/>
-		    <link href="css/graph.css" media="all" type="text/css" rel="stylesheet"/>
-				
-		    <!-- Third Party Scripts -->
-		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		    <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-		    <script type="text/javascript" src="js/lib/d3/d3.js"></script>
-		    <script type="text/javascript" src="js/lib/d3/d3.time.js"></script>
-		    <script type="text/javascript" src="js/lib/color.converter.js"></script>
-		    <script type="text/javascript" src="js/lib/date.js"></script>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            My Comparisons
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link href="css/app.css" media="all" type="text/css" rel="stylesheet"/>
+        <link href="css/graph.css" media="all" type="text/css" rel="stylesheet"/>
 
-		    <!-- OMH Scripts -->
-		    <script type="text/javascript" src="js/utils.js"></script>
-		    <script type="text/javascript" src="js/omh.js"></script>
-		    <script type="text/javascript" src="js/omh.payloads.js"></script>
-				
-		    <script type="text/javascript" src="js/pvis.js"></script>
-		    <script type="text/javascript" src="js/bubble.js"></script>
-		    <script type="text/javascript" src="js/pvis.plot.js"></script>
-		    <script type="text/javascript" src="js/pvis/campaign.js"></script>
-		    <script type="text/javascript" src="js/pvis/food.js"></script>
-				<script type="text/javascript" src="js/pvis/glucose.js"></script>
-				<script type="text/javascript" src="js/pvis/notes.js"></script>
-				<script type="text/javascript" src="js/pvis/pam.js"></script>
-				<script type="text/javascript" src="js/pvis/runkeeper.js"></script>
-				<script type="text/javascript" src="js/pvis/sleep.js"></script>
-				<script type="text/javascript" src="js/pvis/weight.js"></script>
+        <!-- Third Party Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script type="text/javascript" src="js/lib/d3/d3.js"></script>
+        <script type="text/javascript" src="js/lib/d3/d3.time.js"></script>
+        <script type="text/javascript" src="js/lib/color.converter.js"></script>
+        <script type="text/javascript" src="js/lib/date.js"></script>
 
-		    <script type="text/javascript" src="js/pvis.cmp.js"></script>
-		    <script type="text/javascript" src="js/pvis.controller.js"></script>
-				
-		</head>
+        <!-- OMH Scripts -->
+        <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript" src="js/omh.js"></script>
+        <script type="text/javascript" src="js/omh.payloads.js"></script>
+
+        <script type="text/javascript" src="js/pvis.js"></script>
+        <script type="text/javascript" src="js/bubble.js"></script>
+        <script type="text/javascript" src="js/pvis.plot.js"></script>
+        <script type="text/javascript" src="js/pvis/campaign.js"></script>
+        <script type="text/javascript" src="js/pvis/food.js"></script>
+        <script type="text/javascript" src="js/pvis/glucose.js"></script>
+        <script type="text/javascript" src="js/pvis/notes.js"></script>
+        <script type="text/javascript" src="js/pvis/pam.js"></script>
+        <script type="text/javascript" src="js/pvis/runkeeper.js"></script>
+        <script type="text/javascript" src="js/pvis/sleep.js"></script>
+        <script type="text/javascript" src="js/pvis/weight.js"></script>
+
+        <script type="text/javascript" src="js/pvis.cmp.js"></script>
+        <script type="text/javascript" src="js/pvis.controller.js"></script>
+
+    </head>
     <body style="padding: 0px;">
 
         <div data-role="page" id="comparisons">
@@ -55,11 +54,11 @@ and open the template in the editor.
                     Logout
                 </a>
             </div>
-						<div data-role="content" id="content">
-								<div id="error" style="display: none"></div>
-								<p id="username"></p>
-								<div id="container"></div>
-						</div>
+            <div data-role="content" id="content">
+                <div id="error" style="display: none"></div>
+                <p id="username"></p>
+                <div id="container"></div>
+            </div>
         </div>
 
         <div data-role="page" id="login">
@@ -70,7 +69,7 @@ and open the template in the editor.
             </div>
 
             <div data-role="content" id="loginDialog">
-	         	 		<p class="msg">Please sign in to access data.</p>
+                <p class="msg">Please sign in to access data.</p>
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
                         <label for="textinput1">
@@ -91,5 +90,5 @@ and open the template in the editor.
             </div>
         </div>
 
-</body>
+    </body>
 </html>
