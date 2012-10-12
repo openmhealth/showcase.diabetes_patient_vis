@@ -125,7 +125,7 @@ function simpleChart() {
 			
       g = d3.select(this);
 			
-			var data = d.calculate();
+			var data = pvis.calculate.call(d);
 
 			if(!data) {
 				// If there is no data, we just say no data

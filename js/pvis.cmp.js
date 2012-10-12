@@ -66,7 +66,6 @@ pvis.cmp = [
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.notes.value,
 		"compare": pvis.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.notes.visualize
 	},
 	{
@@ -82,7 +81,6 @@ pvis.cmp = [
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.notes.value,
 		"compare": pvis.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.notes.visualize
 	},
 	{
@@ -98,7 +96,6 @@ pvis.cmp = [
 		"resTime": pvis.timestamp,
 		"resValue": pvis.runkeeper.value,
 		"compare": pvis.runkeeper.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.runkeeper.visualize
 	},
 	{
@@ -114,7 +111,6 @@ pvis.cmp = [
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.food.value,
 		"compare": pvis.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.food.visualize
 	},
 	{
@@ -130,7 +126,6 @@ pvis.cmp = [
 		"resTime": pvis.timestamp,
 		"resValue": pvis.sleep.value,
 		"compare": pvis.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.sleep.visualize
 	},
 	{
@@ -146,7 +141,6 @@ pvis.cmp = [
 		"resTime": pvis.timestamp,
 		"resValue": pvis.weight.value,
 		"compare": pvis.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.notes.visualize
 	},
 	{
@@ -162,7 +156,6 @@ pvis.cmp = [
 		"resTime": pvis.timestamp,
 		"resValue": pvis.glucose.value,
 		"compare": pvis.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.glucose.visualize
 	},
 	{
@@ -178,7 +171,6 @@ pvis.cmp = [
 		"resTime": pvis.campaign.timestamp,
 		"resValue": pvis.food.value,
 		"compare": pvis.compare,
-		"calculate": pvis.calculate,
 		"visualize": pvis.food.visualize
 	}
 
