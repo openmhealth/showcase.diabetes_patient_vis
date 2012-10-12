@@ -12,8 +12,10 @@ pvis.controller = function(){
     $('#logoutButton').click(omh.logout)
     
     if(!omh.token())
-      pvis.ui.showLoginDialog()
+      $.mobile.changePage($("#login"), {'transition':'none'})
     else{
+      $.mobile.changePage($("#comparisons"), {'transition':'none'})
+
       $("#username").text(omh.username());
 
       $.mobile.showPageLoadingMsg();

@@ -29,7 +29,6 @@ and open the template in the editor.
 		    <script type="text/javascript" src="js/omh.payloads.js"></script>
 				
 		    <script type="text/javascript" src="js/pvis.js"></script>
-		    <script type="text/javascript" src="js/pvis.ui.js"></script>
 		    <script type="text/javascript" src="js/bubble.js"></script>
 		    <script type="text/javascript" src="js/pvis.plot.js"></script>
 		    <script type="text/javascript" src="js/pvis/campaign.js"></script>
@@ -47,7 +46,7 @@ and open the template in the editor.
 		</head>
     <body style="padding: 0px;">
 
-        <div data-role="page">
+        <div data-role="page" id="comparisons">
             <div data-theme="a" data-role="header">
                 <h3>
                     My Comparisons
@@ -61,8 +60,16 @@ and open the template in the editor.
 								<p id="username"></p>
 								<div id="container"></div>
 						</div>
+        </div>
 
-            <div data-role="content" id="loginDialog" style="display: none">
+        <div data-role="page" id="login">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    My Comparisons
+                </h3>
+            </div>
+
+            <div data-role="content" id="loginDialog">
 	         	 		<p class="msg">Please sign in to access data.</p>
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
