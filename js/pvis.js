@@ -6,7 +6,7 @@ pvis.timestamp = function(v) {
 }
 
 pvis.compare = function(r,k) {
-  return utils.compareDates(this.resTime(r), this.from.timestamp(k), this.duration, this.offset);
+  return utils.compareDates(this.to.timestamp(r), this.from.timestamp(k), this.duration, this.offset);
 }
 
 pvis.calculate = function() {
@@ -32,8 +32,8 @@ pvis.calculate = function() {
               'value':self.from.value(v)
             },
             'res':{
-              'timestamp':self.resTime(v2),
-              'value':self.resValue(v2)
+              'timestamp':self.to.timestamp(v2),
+              'value':self.to.value(v2)
             }
           }
           return false;

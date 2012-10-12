@@ -9,6 +9,8 @@ pvis.runkeeper.value = function(v) {
 	};
 }
 
+pvis.runkeeper.timestamp = pvis.timestamp;
+
 pvis.runkeeper.compare = function(r,k) {
 	var begin = utils.compareDates(r.data.start_time, this.from.timestamp(k), this.duration, this.offset);
 	var end = utils.compareDates(new Date(r.data.start_time).getTime() + r.data.duration, this.from.timestamp(k), this.duration, this.offset);

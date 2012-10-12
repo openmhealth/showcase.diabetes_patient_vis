@@ -22,6 +22,8 @@ pvis.food.value = function(v) {
 	};
 }
 
+pvis.food.timestamp = pvis.campaign.timestamp;
+
 pvis.food.visualize = function(g, d, data, scale) {
 
 	var b = new bubble(g, scale(data.res.timestamp));

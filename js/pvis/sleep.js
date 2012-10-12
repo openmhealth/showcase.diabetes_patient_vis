@@ -10,6 +10,8 @@ pvis.sleep.value = function(v) {
 	};
 }
 
+pvis.sleep.timestamp = pvis.timestamp;
+
 pvis.sleep.visualize = function(g, d, data, scale) {
 
 	var b = new bubble(g, scale(data.res.timestamp));
