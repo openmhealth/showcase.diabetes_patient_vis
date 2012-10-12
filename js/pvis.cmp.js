@@ -1,16 +1,10 @@
 console.log('cmp')
 
-
-
-var pam = {}
-pam.positive = ["excited", "delighted", "happy", "glad", "calm", "satisfied", "serene", "sleepy"]
-pam.negative = ["afraid", "tense", "frustrated", "angry", "miserable", "sad", "gloomy", "tired"]
-
 pvis.cmp = [
 	{
 		"from": pvis.pam,
 		"to": pvis.notes,
-		"key": pam.positive,
+		"key": pvis.pam.positive,
 		"duration": 3600000,
 		"offset": 0.5,
 
@@ -19,7 +13,7 @@ pvis.cmp = [
 	{
 		"from": pvis.pam,
 		"to": pvis.notes,
-		"key": pam.negative,
+		"key": pvis.pam.negative,
 		"duration": 3600000,
 		"offset": 0.5,
 
@@ -28,7 +22,7 @@ pvis.cmp = [
 	{
 		"from": pvis.pam,
 		"to": pvis.runkeeper,
-		"key": pam.positive,
+		"key": pvis.pam.positive,
 		"duration": 10800000,
 		"offset": 0.9,
 

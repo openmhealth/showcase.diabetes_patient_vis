@@ -1,6 +1,9 @@
 pvis.pam = {}
 pvis.pam.payload_id = "pam";
 
+pvis.pam.positive = ["excited", "delighted", "happy", "glad", "calm", "satisfied", "serene", "sleepy"]
+pvis.pam.negative = ["afraid", "tense", "frustrated", "angry", "miserable", "sad", "gloomy", "tired"]
+
 pvis.pam.value = function(v) {
 	var response = v.data.responses[0].value.last();
 	
@@ -20,9 +23,9 @@ pvis.pam.filter = function(v, key) {
 }
 
 pvis.pam.key_title = function(key) {
-	if(key == pam.positive) {
+	if(key == this.positive) {
 		return "Postitive Emotions";
-	} else if(key == pam.negative) {
+	} else if(key == this.negative) {
 		return "Negative Emotions";
 	} else {
 		return key;
