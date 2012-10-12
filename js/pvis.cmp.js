@@ -72,6 +72,18 @@ pvis.cmp = [
 		"offset": 0.9,
 
 		"compare": pvis.compare
+	},
+	{
+		"from": pvis.pam,
+		"to": pvis.notes,
+		"key": "Custom filter randomly returns true if mood is not satisfied",
+		"duration": 3600000,
+		"offset": 0.5,
+
+		"compare": pvis.compare,
+		"filter": function(v, key) {
+			return this.value(v).mood != "satisfied" && Math.round(Math.random());
+		}
 	}
 
 ]

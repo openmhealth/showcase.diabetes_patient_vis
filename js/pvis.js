@@ -19,8 +19,14 @@ pvis.calculate = function() {
   var data;
 
   $.each(pvis.controller.data[self.from.payload_id], function(i,v) {
+    // Find the correct filtering function
+    var filter = self.filter;
+    if(!filter) {
+      filter = self.from.filter;
+    }
+
     // Search instances of this key
-    if(self.from.filter(v, self.key)) {
+    if(filter.call(self.from, v, self.key)) {
       $.each(pvis.controller.data[self.to.payload_id], function(i2,v2) {
         var res = self.compare(v2,v,self.duration,self.offset);
         if(res < 0) {
