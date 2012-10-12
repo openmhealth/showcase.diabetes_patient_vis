@@ -10,7 +10,7 @@ pvis.controller = function(){
     //login
     $('#loginButton').click(self.signIn)
     $('#logoutButton').click(omh.logout)
-
+    
     if(!omh.token())
       pvis.ui.showLoginDialog()
     else{
@@ -28,6 +28,7 @@ pvis.controller = function(){
             self.checkData();
           },
           failure:function(e) {
+            self.showError($.parseJSON(e.responseText));
             pvis.controller.data[k] = {}
             self.checkData();
           }
@@ -70,6 +71,13 @@ pvis.controller = function(){
       }
     })
     return false
+  }
+
+  self.showError = function(err) {
+    err.errors.each(function(v) {
+      $('#error').append('<p>'+v.text+'</p>');
+      $('#error').show();
+    })
   }
 
   return self;

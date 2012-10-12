@@ -26,10 +26,6 @@
     font-weight: bold;
 }
 
-.ui-dialog-titlebar{
-    display: none;
-}
-
 #logoutButton{
     cursor:pointer;    
     float:right;
@@ -38,4 +34,15 @@
 
 h1 {
 	font-size: 40pt;
+}
+
+#error {
+  border: 1px solid;
+  margin: 0px 0px;
+  padding:10px 10px 10px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('../images/error.png');
 }
