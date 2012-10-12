@@ -65,9 +65,14 @@ pvis.controller = function(){
       success:function(){
         window.location.reload();
       },
-      failure:function(){
-        $('#loginDialog .msg').css('color','red').
-        text('Incorrect user name or password. Please try again.')
+      failure:function(res){
+        if(res) {
+          $('#loginDialog .msg').css('color','red').
+          text('Incorrect user name or password. Please try again.')
+        } else {
+          $('#loginDialog .msg').css('color','red').
+          text('Server error. Please try again later.')
+        }
       }
     })
     return false
