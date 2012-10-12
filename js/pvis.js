@@ -48,3 +48,9 @@ pvis.calculate = function() {
 
   return data;
 }
+
+pvis.visualize = function(g, d, data, scale) {
+
+	var b = new bubble(g, scale(data.res.timestamp));
+	b.addText([data.res.value]);
+}

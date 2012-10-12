@@ -6,3 +6,5 @@ pvis.weight.value = function(v) {
 }
 
 pvis.weight.timestamp = pvis.timestamp;
+
+pvis.weight.visualize = pvis.visualize;

@@ -14,8 +14,7 @@ pvis.cmp = [
 		"duration": 3600000,
 		"offset": 0.5,
 
-		"compare": pvis.compare,
-		"visualize": pvis.notes.visualize
+		"compare": pvis.compare
 	},
 	{
 		"from": pvis.pam,
@@ -24,8 +23,7 @@ pvis.cmp = [
 		"duration": 3600000,
 		"offset": 0.5,
 
-		"compare": pvis.compare,
-		"visualize": pvis.notes.visualize
+		"compare": pvis.compare
 	},
 	{
 		"from": pvis.pam,
@@ -34,8 +32,7 @@ pvis.cmp = [
 		"duration": 10800000,
 		"offset": 0.9,
 
-		"compare": pvis.runkeeper.compare,
-		"visualize": pvis.runkeeper.visualize
+		"compare": pvis.runkeeper.compare
 	},
 	{
 		"from": pvis.pam,
@@ -44,8 +41,7 @@ pvis.cmp = [
 		"duration": 3600000,
 		"offset": 0.9,
 
-		"compare": pvis.compare,
-		"visualize": pvis.food.visualize
+		"compare": pvis.compare
 	},
 	{
 		"from": pvis.pam,
@@ -54,8 +50,7 @@ pvis.cmp = [
 		"duration": 64800000,
 		"offset": 0.9,
 
-		"compare": pvis.compare,
-		"visualize": pvis.sleep.visualize
+		"compare": pvis.compare
 	},
 	{
 		"from": pvis.pam,
@@ -64,8 +59,7 @@ pvis.cmp = [
 		"duration": 64800000,
 		"offset": 0.1,
 
-		"compare": pvis.compare,
-		"visualize": pvis.notes.visualize
+		"compare": pvis.compare
 	},
 	{
 		"from": pvis.pam,
@@ -74,8 +68,7 @@ pvis.cmp = [
 		"duration": 3600000,
 		"offset": 0.9,
 
-		"compare": pvis.compare,
-		"visualize": pvis.glucose.visualize
+		"compare": pvis.compare
 	},
 	{
 		"from": pvis.glucose,
@@ -84,8 +77,7 @@ pvis.cmp = [
 		"duration": 7200000,
 		"offset": 0.9,
 
-		"compare": pvis.compare,
-		"visualize": pvis.food.visualize
+		"compare": pvis.compare
 	}
 
 ]

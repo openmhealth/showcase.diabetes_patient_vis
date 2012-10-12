@@ -216,9 +216,8 @@ function simpleChart() {
 				    .attr("y2", bottom - 80)
 				
 			}
-			
 
-			d.visualize(g, d, data, x0);
+			d.to.visualize(g, d, data, x0);
 
       // Compute the tick format.
       var format = x0.tickFormat(8);

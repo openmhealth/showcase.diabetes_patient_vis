@@ -7,8 +7,4 @@ pvis.notes.value = function(v) {
 
 pvis.notes.timestamp = pvis.campaign.timestamp;
 
-pvis.notes.visualize = function(g, d, data, scale) {
-
-	var b = new bubble(g, scale(data.res.timestamp));
-	b.addText([data.res.value]);
-}
+pvis.notes.visualize = pvis.visualize;
