@@ -28,7 +28,11 @@ pvis.controller = function(){
             self.checkData();
           },
           failure:function(e) {
-            self.showError($.parseJSON(e.responseText));
+            if(e) {
+              self.showError(e);
+            } else {
+              self.showFatalError("Server error. Please try again later.")
+            }
             pvis.controller.data[k] = {}
             self.checkData();
           }
@@ -78,11 +82,18 @@ pvis.controller = function(){
     return false
   }
 
+  // Shows minor errors as the accumulate
   self.showError = function(err) {
     err.errors.each(function(v) {
       $('#error').append('<p>'+v.text+'</p>');
       $('#error').show();
     })
+  }
+
+  // Fatal error which causes the application to be in in an unknown state
+  self.showFatalError = function(err) {
+    $('#error').html('<p>'+err+'</p>');
+    $('#error').show();
   }
 
   return self;
