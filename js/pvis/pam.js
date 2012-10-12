@@ -13,8 +13,10 @@ pvis.pam.value = function(v) {
 	return response;
 }
 
-pvis.pam.filter = function(v) {
-	return $.inArray(this.keyValue(v).mood, this.key) != -1;
+pvis.pam.timestamp = pvis.timestamp;
+
+pvis.pam.filter = function(v, key) {
+	return $.inArray(this.value(v).mood, key) != -1;
 }
 
 pvis.pam.key_title = function(key) {

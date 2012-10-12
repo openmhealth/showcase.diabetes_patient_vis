@@ -8,8 +8,8 @@ pvis.runkeeper.value = function(v) {
 }
 
 pvis.runkeeper.compare = function(r,k) {
-	var begin = utils.compareDates(r.data.start_time, this.keyTime(k), this.duration, this.offset);
-	var end = utils.compareDates(new Date(r.data.start_time).getTime() + r.data.duration, this.keyTime(k), this.duration, this.offset);
+	var begin = utils.compareDates(r.data.start_time, this.from.timestamp(k), this.duration, this.offset);
+	var end = utils.compareDates(new Date(r.data.start_time).getTime() + r.data.duration, this.from.timestamp(k), this.duration, this.offset);
 	
 	if(begin == 0 || end == 0) {
 		return 0;
