@@ -9,8 +9,10 @@ pvis.controller = function(){
 
     //login
     $('#loginButton').click(self.signIn)
-    $('#logoutButton').click(omh.logout)
-    
+    $('.logout').each(function(){
+      $(this).click(omh.logout)
+    });
+
     if(!omh.token())
       $.mobile.changePage($("#login"), {'transition':'none'})
     else{
@@ -42,6 +44,19 @@ pvis.controller = function(){
       });
     }
   })
+
+  self.onComparisonClick = function(d) {
+    $.mobile.changePage($("#comparison"))
+    
+    $("div[id*='comparisons']").live('pagehide', function(event, ui) { 
+        pvis.plot([d], true)
+        $.mobile.hidePageLoadingMsg();
+    });
+    
+    //clear the old plot and show a loading message
+    pvis.plot([], true)
+    $.mobile.showPageLoadingMsg();
+  }
 
   self.checkData = function() {
     var count = 0

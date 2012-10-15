@@ -9,14 +9,14 @@ pvis.compare = function(r,k) {
   return utils.compareDates(this.to.timestamp(r), this.from.timestamp(k), this.duration, this.offset);
 }
 
-pvis.calculate = function() {
+pvis.calculate = function(single) {
   var self = this;
 
   if(!pvis.controller.data[this.from.payload_id] || !pvis.controller.data[this.to.payload_id]) {
     return;
   }
 
-  var data;
+  var data = []
 
   $.each(pvis.controller.data[self.from.payload_id], function(i,v) {
     // Find the correct filtering function
@@ -32,7 +32,7 @@ pvis.calculate = function() {
         if(res < 0) {
           return false;
         } else if(res == 0) {
-          data = {
+          data.push({
             'key':{
               'timestamp':self.from.timestamp(v),
               'value':self.from.value(v)
@@ -41,13 +41,13 @@ pvis.calculate = function() {
               'timestamp':self.to.timestamp(v2),
               'value':self.to.value(v2)
             }
-          }
-          return false;
+          });
+          if(!single) return false;
         }
       });
     }
 
-    if(data) {
+    if(!single && data.length) {
       return false;
     }
   });
