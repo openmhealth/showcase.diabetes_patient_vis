@@ -1,39 +1,9 @@
-
-#key_title{
-	background-color:green;
-}
-
-#res_title{
-	float: right;
-	background-color: blue;
-}
-
 .plot{
 	background-color: lightgrey;
 }
 
-.ctrl_panel{
-    position: relative;
-    clear: both;
-}
-
-.waiting{
-    position: relative;
-    top: 5px;
-}
-
 #loginDialog .msg{
     font-weight: bold;
-}
-
-#logoutButton{
-    cursor:pointer;    
-    float:right;
-    display: block;
-}
-
-h1 {
-	font-size: 40pt;
 }
 
 #error {
