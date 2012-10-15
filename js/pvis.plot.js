@@ -143,7 +143,6 @@ function simpleChart() {
 			
 			if(!data.length) {
 				// If there is no data, we just say no data
-				console.log("no data")
 			  var note = parent.append("g")
 			      .attr("text-anchor", "middle")
 			      .attr("transform", "translate(" + (width / 2 + margin.left) + "," + height / 1.5 + ")");
@@ -241,7 +240,6 @@ function simpleChart() {
   		      .domain([key_timestamp - (d.duration * d.offset), key_timestamp - (-d.duration * (1 -d.offset))])
   		      .range([0, width]);
 
-console.log(d.to.payload_id)
   			d.to.visualize(g, d, data, x0);
 
         // Compute the tick format.
