@@ -59,9 +59,12 @@ pvis.food.visualize = function(g, d, data, scale) {
 pvis.food.nutritionLine = function(title, note, count) {
 	var line = ""
 	if(pvis.campaign.showPrompt(note) || pvis.campaign.showPrompt(count)) {
-		line = title + ": " + note;
+		line = title + ":";
 		if(pvis.campaign.showPrompt(count)) {
 			line += " " + count + "g";
+		}
+		if(pvis.campaign.showPrompt(note)) {
+		  line += " (" + note + ")";
 		}
 	}
 	return line;
