@@ -38,8 +38,8 @@ function bubbleContainer(x) {
 	var tickWidth = 20;
 	return "M " + x.start + " 0 l " + x.width + " 0 "+corner(x.corner,x.corner) 
 		+ "l 0 "+ x.height + corner(-x.corner,x.corner) 
-		+ "l -" + ((x.width-tickWidth)/2) + " 0 l -10 10 l -10 -10 l -"+ ((x.width-tickWidth)/2) + " 0 " + corner(-x.corner,-x.corner) 
-		+ "l 0 -" + x.height + corner(x.corner,-x.corner);
+		+ "l " + -((x.width-tickWidth)/2) + " 0 l -10 10 l -10 -10 l "+ -((x.width-tickWidth)/2) + " 0 " + corner(-x.corner,-x.corner)
+		+ "l 0 " + -x.height + corner(x.corner,-x.corner);
 }
 
 function corner(x,y) {
