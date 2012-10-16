@@ -83,9 +83,9 @@ pvis.plot = function(cmp, single) {
 			.attr("x", 10)
 			.text(function(d) { return d.from.key_title(d.key); })
 
-	defineFilters(container);
+	defineFilters(enter);
 
-	var content = container.append("g").call(chart);
+	var content = enter.append("g").call(chart);
 	
 	content.each(function(v,i) {
 			var height = content[0][i].getBBox().height;
