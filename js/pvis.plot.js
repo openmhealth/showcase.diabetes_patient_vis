@@ -196,7 +196,7 @@ function simpleChart() {
 			marker.append("svg:line")
 					.attr("transform", "translate(" + bubbleWidth / 2 + ")")
 			    .attr("class", "marker")
-			    .attr("y1", 76)
+			    .attr("y1", 80)
 			    .attr("y2", bottom - 80)
 		    }
 
