@@ -3,7 +3,7 @@ omh.payloads = {
 	"pam" : {
 		"payload_id": "omh:ohmage:campaign:urn:campaign:org:openmhealth:pam:survey_id:pamSurvey",
 		"version": 1,
-		"title": "PAM"
+		"title": "Mood"
 	},
 	"food" : {
 		"payload_id": "omh:ohmage:campaign:urn:campaign:openmhealth:diabetes:food:survey_id:meal",
