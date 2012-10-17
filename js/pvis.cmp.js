@@ -3,14 +3,44 @@ console.log('cmp')
 pvis.cmp = [
 	{
 		"from": pvis.pam,
-		"to": pvis.notes,
+		"to": pvis.runkeeper,
 		"key": pvis.pam.positive,
+		"duration": 10800000,
+		"offset": 0.9,
+
+		"compare": pvis.runkeeper.compare
+	},
+	{
+		"from": pvis.pam,
+		"to": pvis.glucose,
+		"key": ["tired","sleepy","gloomy"],
 		"duration": 3600000,
-		"offset": 0.5,
+		"offset": 0.9,
 
 		"compare": pvis.compare
 	},
 	{
+		"from": pvis.glucose,
+		"to": pvis.food,
+		"key": ">= 150",
+		"duration": 3600000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.food,
+		"key": "<= 120",
+		"duration": 3600000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	}
+]
+
+pvis.pam = [
+  {
 		"from": pvis.pam,
 		"to": pvis.notes,
 		"key": pvis.pam.negative,
@@ -21,12 +51,12 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
-		"to": pvis.runkeeper,
+		"to": pvis.notes,
 		"key": pvis.pam.positive,
-		"duration": 10800000,
-		"offset": 0.9,
+		"duration": 3600000,
+		"offset": 0.5,
 
-		"compare": pvis.runkeeper.compare
+		"compare": pvis.compare
 	},
 	{
 		"from": pvis.pam,
@@ -57,6 +87,15 @@ pvis.cmp = [
 	},
 	{
 		"from": pvis.pam,
+		"to": pvis.runkeeper,
+		"key": pvis.pam.positive,
+		"duration": 10800000,
+		"offset": 0.9,
+
+		"compare": pvis.runkeeper.compare
+	},
+	{
+		"from": pvis.pam,
 		"to": pvis.glucose,
 		"key": ["tired","sleepy","gloomy"],
 		"duration": 3600000,
@@ -65,25 +104,98 @@ pvis.cmp = [
 		"compare": pvis.compare
 	},
 	{
-		"from": pvis.glucose,
-		"to": pvis.food,
-		"key": ">= 150",
-		"duration": 7200000,
+		"from": pvis.pam,
+		"to": pvis.sleep,
+		"key": pvis.pam.positive,
+		"duration": 64800000,
 		"offset": 0.9,
 
 		"compare": pvis.compare
 	},
 	{
 		"from": pvis.pam,
+		"to": pvis.sleep,
+		"key": pvis.pam.negative,
+		"duration": 64800000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	}
+
+]
+
+  
+pvis.glucose = [
+  {
+		"from": pvis.glucose,
 		"to": pvis.notes,
-		"key": "Custom filter randomly returns true if mood is not satisfied",
+		"key": ">= 150",
 		"duration": 3600000,
 		"offset": 0.5,
 
-		"compare": pvis.compare,
-		"filter": function(v, key) {
-			return this.value(v).mood != "satisfied" && Math.round(Math.random());
-		}
-	}
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.notes,
+		"key": "<= 100",
+		"duration": 3600000,
+		"offset": 0.5,
 
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.food,
+		"key": "Any",
+		"duration": 3600000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.sleep,
+		"key": "Any",
+		"duration": 64800000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.weight,
+		"key": "Any",
+		"duration": 64800000,
+		"offset": 0.1,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.food,
+		"key": ">= 150",
+		"duration": 3600000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.food,
+		"key": "<= 120",
+		"duration": 3600000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.runkeeper,
+		"key": "Any",
+		"duration": 3600000,
+		"offset": 0.9,
+
+		"compare": pvis.runkeeper.compare
+	}
 ]

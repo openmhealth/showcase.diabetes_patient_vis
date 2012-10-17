@@ -17,6 +17,7 @@ pvis.glucose.visualize = function(g, d, data, scale) {
 }
 
 pvis.glucose.filter = function(v, key) {
+  if(key.toLowerCase() == "any") return true;
 	return eval(this.value(v).glucose + key)
 }
 

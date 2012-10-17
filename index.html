@@ -46,23 +46,87 @@ and open the template in the editor.
     <body style="padding: 0px;">
 
         <div data-role="page" id="comparisons">
-            <div data-theme="a" data-role="header">
+            <div data-theme="a" data-role="header" data-id="main" data-position="fixed">
                 <h3>
                     My Comparisons
                 </h3>
                 <a data-role="button" data-icon="delete" data-iconpos="left" class="ui-btn-right logout">
                     Logout
                 </a>
+                <div data-role="navbar" class="navbar">
+                    <ul>
+                        <li><a href="#comparisons" class="ui-btn-active ui-state-persist">Dashboard</a></li>
+                        <li><a href="#explorer">Explore</a></li>
+                    </ul>
+                </div>
             </div>
             <div data-role="content">
                 <div id="error" style="display: none"></div>
                 <p id="username"></p>
                 <div class="container"></div>
-			</div>
-	    </div>
-				        
-		<div data-role="page" id="comparison">
-            <div data-theme="a" data-role="header">
+            </div>
+        </div>
+
+        <div data-role="page" id="explorer">
+            <div data-theme="a" data-role="header" data-id="main" data-position="fixed">
+                <h3>
+                    My Comparisons
+                </h3>
+                <a data-role="button" data-icon="delete" data-iconpos="left" class="ui-btn-right logout">
+                    Logout
+                </a>
+                <div data-role="navbar" class="navbar">
+                    <ul>
+                        <li><a href="#comparisons">Dashboard</a></li>
+                        <li><a href="#explorer" class="ui-btn-active ui-state-persist">Explore</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div id="explorer_checkboxes" data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                        </legend>
+                        <input id="checkbox_pam" name="checkbox_pam" value="pam" type="checkbox">
+                        <label for="checkbox_pam">
+                            PAM
+                        </label>
+                        <input id="checkbox_glucose" name="checkbox_glucose" value="glucose" type="checkbox">
+                        <label for="checkbox_glucose">
+                            Glucose
+                        </label>
+                    </fieldset>
+                    <fieldset data-role="controlgroup" data-type="vertical">
+                        <legend>
+                        </legend>
+                        <input id="checkbox_food" name="checkbox_food" value="food" type="checkbox">
+                        <label for="checkbox_food">
+                            Food
+                        </label>
+                        <input id="checkbox_notes" name="checkbox_notes" value="notes" type="checkbox">
+                        <label for="checkbox_notes">
+                            Notes
+                        </label>
+                        <input id="checkbox_runkeeper" name="checkbox_runkeeper" value="runkeeper" type="checkbox">
+                        <label for="checkbox_runkeeper">
+                            Run
+                        </label>
+                        <input id="checkbox_sleep" name="checkbox_sleep" value="sleep" type="checkbox">
+                        <label for="checkbox_sleep">
+                            Sleep
+                        </label>
+                        <input id="checkbox_weight" name="checkbox_weight" value="weight" type="checkbox">
+                        <label for="checkbox_weight">
+                            Weight
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="container"></div>
+            </div>
+        </div>
+
+        <div data-role="page" id="comparison">
+            <div data-theme="a" data-role="header" data-id="main" data-position="fixed">
                 <h3>
                     My Comparisons
                 </h3>

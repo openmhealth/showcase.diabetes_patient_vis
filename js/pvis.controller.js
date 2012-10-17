@@ -13,6 +13,8 @@ pvis.controller = function(){
       $(this).click(omh.logout)
     });
 
+    $('.navbar').addClass('ui-disabled');
+
     if(!omh.token())
       $.mobile.changePage($("#login"), {'transition':'none'})
     else{
@@ -43,18 +45,42 @@ pvis.controller = function(){
         })
       });
     }
+
+    //Set up explore filters    
+    $("input[type='checkbox']").live("change", function() {
+
+      var possible = [];
+      var data = [];
+
+      $(":checked").each(function (i, v) {
+        var val = $(this).prop('value');
+        if(val == "glucose" || val == "pam") {
+          possible = possible.concat(pvis[val])
+        } else {
+          possible.each(function (v) {
+            if(v.to.payload_id === val) {
+              data.push(v)
+            }
+          })
+        }
+      })
+
+      pvis.plot(data, true, "#explorer .container")
+
+    });
   })
 
   self.onComparisonClick = function(d) {
     $.mobile.changePage($("#comparison"))
     
-    $("div[id*='comparisons']").live('pagehide', function(event, ui) { 
-        pvis.plot([d], true)
+    $( document ).delegate("#comparison", "pageshow", function() {
+      console.log("comp")
+        pvis.plot([d], false, "#comparison .container")
         $.mobile.hidePageLoadingMsg();
     });
-    
+
     //clear the old plot and show a loading message
-    pvis.plot([], true)
+    pvis.plot([], false, "#comparison .container")
     $.mobile.showPageLoadingMsg();
   }
 
@@ -67,6 +93,7 @@ pvis.controller = function(){
     }
 
     if(count == 7) {
+      $('.navbar').removeClass('ui-disabled');
       $.mobile.hidePageLoadingMsg();
       pvis.plot(pvis.cmp);
     }

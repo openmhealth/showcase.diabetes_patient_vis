@@ -11,11 +11,17 @@ $(window).on("resize", function() {
 	resizeSVG();
 });
 
-pvis.plot = function(cmp, single) {
-  
+pvis.plot = function(cmp, single, c) {
+
+  if(single == undefined)
+    single = true;
+
+  if(c == undefined)
+    c="#comparisons .container"
+
   chart.single = single
   
-  var container = d3.selectAll((single) ? "#comparison .container" : "#comparisons .container").selectAll("svg")
+  var container = d3.selectAll(c).selectAll("svg")
       .data(cmp, function(d) { return d.from.title+d.to.title+d.key+d.duration+d.offset; });
       
 	var enter = container.enter().append("svg")
@@ -23,7 +29,7 @@ pvis.plot = function(cmp, single) {
 			.attr("viewBox", "0 0 " + width + " " + height)
       .attr("preserveAspectRatio", "xMinYMin");
       
-  if(!single) {
+  if(single) {
     enter.on("click", function(d) {
       // Show the comparison page for this comparison
       pvis.controller.onComparisonClick(d);
@@ -94,6 +100,19 @@ pvis.plot = function(cmp, single) {
 			
 	container.exit().remove()
 
+  // Sort the comparisons
+  d3.selectAll(c).selectAll("svg").sort(function(d1, d2) {
+    var d1from = omh.payloads[d1.from.payload_id].title;
+    var d2from = omh.payloads[d2.from.payload_id].title;
+    var d1to = omh.payloads[d1.to.payload_id].title;
+    var d2to = omh.payloads[d2.to.payload_id].title;
+
+    var d1 = d1from + d1to;
+    var d2 = d2from + d2to;
+
+    return d1.localeCompare(d2)
+  })
+
 	resizeSVG();
 }
 
@@ -136,7 +155,7 @@ function simpleChart() {
 			
       var parent = d3.select(this);
 
-			var data = pvis.calculate.call(d, chart.single);
+			var data = pvis.calculate.call(d, !chart.single);
 			
 			g = parent.selectAll("g").data(data).enter().append("g")
     			.attr("transform", function(v,i) { return "translate(" + margin.left + "," + i * 180 + ")" })
