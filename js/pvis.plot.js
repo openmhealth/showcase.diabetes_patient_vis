@@ -22,7 +22,7 @@ pvis.plot = function(cmp, single, c) {
   chart.single = single
   
   var container = d3.selectAll(c).selectAll("svg")
-      .data(cmp, function(d) { return d.from.title+d.to.title+d.key+d.duration+d.offset; });
+      .data(cmp, function(d) { return d.from.payload_id+d.to.payload_id+d.key+d.duration+d.offset; });
       
 	var enter = container.enter().append("svg")
 	    .attr("class", "plot")
