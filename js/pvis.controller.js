@@ -49,19 +49,14 @@ pvis.controller = function(){
     //Set up explore filters    
     $("input[type='checkbox']").live("change", function() {
 
-      var possible = [];
       var data = [];
 
-      $(":checked").each(function (i, v) {
-        var val = $(this).prop('value');
-        if(val == "glucose" || val == "pam") {
-          possible = possible.concat(pvis[val])
-        } else {
-          possible.each(function (v) {
-            if(v.to.payload_id === val) {
-              data.push(v)
-            }
-          })
+      pvis.explorer.each(function(v) {
+        var to = $("#checkbox_"+v.to.payload_id).prop('checked')
+        var from = $("#checkbox_"+v.from.payload_id).prop('checked')
+
+        if(to && from) {
+          data.push(v)
         }
       })
 
