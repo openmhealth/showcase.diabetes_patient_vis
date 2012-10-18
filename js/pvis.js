@@ -17,7 +17,7 @@ pvis.calculate = function(single) {
   var self = this;
 
   if(!pvis.controller.data[this.from.payload_id] || !pvis.controller.data[this.to.payload_id]) {
-    return;
+    return [];
   }
 
   var data = []
