@@ -24,3 +24,15 @@ pvis.glucose.filter = function(v, key) {
 pvis.glucose.key_title = function(key) {
 	return key;
 }
+
+pvis.glucose.simple_vis = function(g) {
+  g.each(function(d, i) {
+    var parent = d3.select(this);
+
+    parent.append("text")
+      .attr("y", 18)
+      .attr("x", 25)
+      .attr("text-anchor","middle")
+      .text(d.key.value.glucose)
+  });
+}

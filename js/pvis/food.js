@@ -55,7 +55,6 @@ pvis.food.visualize = function(g, d, data, scale) {
 	b.addText(lines);
 }
 
-
 pvis.food.nutritionLine = function(title, note, count) {
 	var line = ""
 	if(pvis.campaign.showPrompt(note) || pvis.campaign.showPrompt(count)) {
@@ -68,4 +67,29 @@ pvis.food.nutritionLine = function(title, note, count) {
 		}
 	}
 	return line;
+}
+
+pvis.food.key_title = function(key) {
+	return key;
+}
+
+pvis.food.simple_vis = function(g) {
+  g.each(function(d, i) {
+    var parent = d3.select(this);
+
+    parent.append("text")
+      .attr("y", 18)
+      .attr("x", 25)
+      .attr("text-anchor","middle")
+      .text("Carbs: " + d.key.value.carbCount + "g")
+
+    if(pvis.campaign.showPrompt(d.key.value.carbNote)) {
+      parent.append("text")
+        .attr("y", 18)
+        .attr("x", 25)
+        .attr("dy", "1.5em")
+        .attr("text-anchor","middle")
+        .text(d.key.value.carbNote)
+      }
+  });
 }

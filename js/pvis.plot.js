@@ -160,8 +160,8 @@ function simpleChart() {
 			g = parent.selectAll("g").data(data).enter().append("g")
     			.attr("transform", function(v,i) { return "translate(" + margin.left + "," + i * 180 + ")" })
 			
+			// If there is no data, we just say no data
 			if(!data.length) {
-				// If there is no data, we just say no data
 			  var note = parent.append("g")
 			      .attr("text-anchor", "middle")
 			      .attr("transform", "translate(" + (width / 2 + margin.left) + "," + height / 1.5 + ")");
@@ -174,8 +174,8 @@ function simpleChart() {
 			      
 				return;
 			}
-			
-			// Add the pam marker line
+
+			// Add the 'from' marker line and data
 			var marker = g.append("g");
 
 			var bubble = marker.append("rect")
@@ -184,70 +184,31 @@ function simpleChart() {
 					.attr("ry",5)
 					.attr("fill","#A2A2A2")
 			
-			var bubbleContent = marker.append("g")
+			var bubbleContent = marker.append("g");
+      bubbleContent.call(d.from.simple_vis)
 
 			var bottom = height - margin.bottom;
 
+      bubble.each(function(v,i) {
+        var bubbleWidth = Math.max(60, bubbleContent[0][i].getBBox().width+5);
+        var bubbleHeight = Math.max(30, bubbleContent[0][i].getBBox().height+5);
 
-			if(d.from.payload_id == "pam") {
-			bubbleContent.append("image")
-					.attr("width",50)
-					.attr("height",50)
-					.attr("xlink:href", function(d) { return "images/pam/"+d.key.value.photo_id+"_"+d.key.value.mood+"/"+d.key.value.photo_id+"_"+d.key.value.sub_photo_id+".jpg" });
-			
-			var key = bubbleContent.append("text")
-					.attr("y", 70)
-					.attr("x", 25)
-					.attr("text-anchor","middle")
-					.text(function(d) { return d.key.value.mood })
-				
-				if(key.node() != null) {
-			var titleLength = Math.max(60, key.node().getComputedTextLength());
-			
-			bubbleContent.attr("transform", "translate(" + ((titleLength- 60 + 10)/2) + ",5)")
-			bubble.attr("width" ,  titleLength)
-			
-			
-			bubbleWidth= bubble.node().getBBox().width;
+        d3.select(bubbleContent[0][i]).attr("transform", "translate(" + ((bubbleWidth- 60 + 10)/2) + ",5)")
 
-			marker.attr("transform", "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")");
+        d3.select(bubble[0][i]).attr("width" ,  bubbleWidth)
+        d3.select(bubble[0][i]).attr("height" ,  bubbleHeight)
 
-			marker.append("svg:line")
-					.attr("transform", "translate(" + bubbleWidth / 2 + ")")
-			    .attr("class", "marker")
-			    .attr("y1", 80)
-			    .attr("y2", bottom - 80)
-		    }
+        d3.select(marker[0][i]).attr("transform", "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")");
 
-			} else {
+        d3.select(marker[0][i]).append("svg:line")
+        .attr("transform", "translate(" + bubbleWidth / 2 + ")")
+        .attr("class", "marker")
+        .attr("y1", bubbleHeight)
+        .attr("y2", bottom - 80)
 
-				bubble.attr("height",30)
-				var key = bubbleContent.append("text")
-						.attr("y", 18)
-						.attr("x", 25)
-						.attr("text-anchor","middle")
-						.text(function(d) { return d.key.value.glucose })
-				
-						if(key.node() != null) {
-    		
-				var titleLength = Math.max(60, key.node().getComputedTextLength());
-			
-				bubbleContent.attr("transform", "translate(" + ((titleLength- 60 + 10)/2) + ",5)")
-				bubble.attr("width" ,  titleLength)
-			
-			
-				bubbleWidth= bubble.node().getBBox().width;
+      });
 
-				marker.attr("transform", "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")");
-
-				marker.append("svg:line")
-						.attr("transform", "translate(" + bubbleWidth / 2 + ")")
-				    .attr("class", "marker")
-				    .attr("y1", 26)
-				    .attr("y2", bottom - 80)
-				}
-			}
-
+      // Add the 'to' data
       g.each(function(data) {
 
         g = d3.select(this);

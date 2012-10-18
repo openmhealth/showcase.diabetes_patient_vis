@@ -36,6 +36,16 @@ pvis.cmp = [
 		"offset": 0.9,
 
 		"compare": pvis.compare
+	},
+	{
+		"from": pvis.food,
+		"to": pvis.glucose,
+		"key": "Any",
+		"duration": 3600000,
+		"offset": 0.1,
+
+		"compare": pvis.compare,
+		"filter": function(v) {return true;}
 	}
 ]
 
