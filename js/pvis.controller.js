@@ -39,7 +39,7 @@ pvis.controller = function(){
             } else {
               self.showFatalError("Server error. Please try again later.")
             }
-            pvis.controller.data[k] = {}
+            pvis.controller.data[k] = []
             self.checkData();
           }
         })
