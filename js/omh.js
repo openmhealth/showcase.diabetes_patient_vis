@@ -48,10 +48,14 @@ omh.authenticate = function(user, password, callback){
         callback.failure(res)
     }
   }).fail(function(jqXHR, textStatus) {
-
-    res = $.parseJSON(jqXHR.responseText)
-    if(callback && callback.failure)
-      callback.failure(res)
+    try {
+      res = $.parseJSON(jqXHR.responseText)
+      if(callback && callback.failure)
+        callback.failure(res)
+    } catch (e) {
+        console.log(e);
+        callback.failure()
+    }
   });
 }
 
@@ -71,24 +75,29 @@ omh.read = function(payloadID, payloadVersion, optional){
     type:'POST',
     success: optional.success
   }).fail(function(jqXHR, textStatus) {
-		
-		console.log(jqXHR)
-		
-		res = $.parseJSON(jqXHR.responseText)
-		var autherror = false;
+    try {
+	    res = $.parseJSON(jqXHR.responseText)
+	    var autherror = false;
 
-    if(res) {
-      $.each(res.errors,function(i, error){
-        if(error.code == AUTH_TOKEN_ERROR) {
-          console.log("Authentication Error")
-			    omh.logout();
-			    autherror = true;
-	      }
-      })
+      if(res) {
+        $.each(res.errors,function(i, error){
+          if(error.code == AUTH_TOKEN_ERROR) {
+            console.log("Authentication Error")
+			      omh.logout();
+			      autherror = true;
+	        }
+        })
+      }
+
+      if(!autherror && optional.failure) {
+        optional.failure(res)
+      }
+    } catch(e) {
+      console.log(e)
+      if(optional.failure) {
+        optional.failure()
+      }
     }
-
-    if(!autherror && optional.failure)
-      optional.failure(res)
 	});
 }
 
