@@ -9,6 +9,10 @@ pvis.compare = function(r,k) {
   return utils.compareDates(this.to.timestamp(r), this.from.timestamp(k), this.duration, this.offset);
 }
 
+pvis.key_title = function(key) {
+	return key;
+}
+
 pvis.calculate = function(single) {
   var self = this;
 

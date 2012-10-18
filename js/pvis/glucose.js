@@ -21,9 +21,7 @@ pvis.glucose.filter = function(v, key) {
 	return eval(this.value(v).glucose + key)
 }
 
-pvis.glucose.key_title = function(key) {
-	return key;
-}
+pvis.glucose.key_title = pvis.key_title
 
 pvis.glucose.simple_vis = function(g) {
   g.each(function(d, i) {

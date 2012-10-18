@@ -69,9 +69,7 @@ pvis.food.nutritionLine = function(title, note, count) {
 	return line;
 }
 
-pvis.food.key_title = function(key) {
-	return key;
-}
+pvis.food.key_title = pvis.key_title
 
 pvis.food.simple_vis = function(g) {
   g.each(function(d, i) {
