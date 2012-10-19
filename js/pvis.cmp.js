@@ -40,7 +40,9 @@ pvis.cmp = [
 ]
 
 pvis.explorer = [
-  {
+	// pam
+
+	{
 		"from": pvis.pam,
 		"to": pvis.notes,
 		"key": pvis.pam.negative,
@@ -121,23 +123,18 @@ pvis.explorer = [
 
 		"compare": pvis.compare
 	},
-  {
-		"from": pvis.glucose,
-		"to": pvis.notes,
-		"key": ">= 150",
-		"duration": 3600000,
-		"offset": 0.5,
 
-		"compare": pvis.compare
-	},
+	// glucose
+
 	{
 		"from": pvis.glucose,
-		"to": pvis.notes,
-		"key": "<= 100",
+		"to": pvis.pam,
+		"key": "Any",
 		"duration": 3600000,
 		"offset": 0.5,
 
-		"compare": pvis.compare
+		"compare": pvis.compare,
+		"filter": function(v) {return true;}
 	},
 	{
 		"from": pvis.glucose,
@@ -145,24 +142,6 @@ pvis.explorer = [
 		"key": "Any",
 		"duration": 3600000,
 		"offset": 0.9,
-
-		"compare": pvis.compare
-	},
-	{
-		"from": pvis.glucose,
-		"to": pvis.sleep,
-		"key": "Any",
-		"duration": 64800000,
-		"offset": 0.9,
-
-		"compare": pvis.compare
-	},
-	{
-		"from": pvis.glucose,
-		"to": pvis.weight,
-		"key": "Any",
-		"duration": 64800000,
-		"offset": 0.1,
 
 		"compare": pvis.compare
 	},
@@ -186,6 +165,24 @@ pvis.explorer = [
 	},
 	{
 		"from": pvis.glucose,
+		"to": pvis.notes,
+		"key": ">= 150",
+		"duration": 3600000,
+		"offset": 0.5,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.notes,
+		"key": "<= 100",
+		"duration": 3600000,
+		"offset": 0.5,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
 		"to": pvis.runkeeper,
 		"key": "Any",
 		"duration": 3600000,
@@ -194,15 +191,39 @@ pvis.explorer = [
 		"compare": pvis.runkeeper.compare
 	},
 	{
-		"from": pvis.food,
-		"to": pvis.glucose,
+		"from": pvis.glucose,
+		"to": pvis.sleep,
 		"key": "Any",
-		"duration": 3600000,
+		"duration": 64800000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.weight,
+		"key": "Any",
+		"duration": 64800000,
 		"offset": 0.1,
+
+		"compare": pvis.compare
+	},
+
+	// food
+
+	{
+		"from": pvis.food,
+		"to": pvis.sleep,
+		"key": "Any",
+		"duration": 64800000,
+		"offset": 0.5,
 
 		"compare": pvis.compare,
 		"filter": function(v) {return true;}
 	},
+
+	// runkeeper
+
 	{
 		"from": pvis.runkeeper,
 		"to": pvis.notes,
@@ -211,15 +232,5 @@ pvis.explorer = [
 		"offset": 0.1,
 
 		"compare": pvis.compare
-	},
-	{
-		"from": pvis.glucose,
-		"to": pvis.pam,
-		"key": "Any",
-		"duration": 3600000,
-		"offset": 0.5,
-
-		"compare": pvis.compare,
-		"filter": function(v) {return true;}
 	}
 ]
