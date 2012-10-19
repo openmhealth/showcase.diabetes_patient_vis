@@ -75,19 +75,41 @@ pvis.food.simple_vis = function(g) {
   g.each(function(d, i) {
     var parent = d3.select(this);
 
-    parent.append("text")
-      .attr("y", 18)
-      .attr("x", 25)
-      .attr("text-anchor","middle")
-      .text("Carbs: " + d.key.value.carbCount + "g")
+    var lines = 0;
+    if(pvis.campaign.showPrompt(d.key.value.carbCount)) {
+      parent.append("text")
+        .attr("y", 18)
+        .attr("x", 25)
+        .attr("text-anchor","middle")
+        .text("Carbs: " + d.key.value.carbCount + "g")
+        lines += 1;
+    }
 
     if(pvis.campaign.showPrompt(d.key.value.carbNote)) {
       parent.append("text")
         .attr("y", 18)
         .attr("x", 25)
-        .attr("dy", "1.5em")
+        .attr("dy", (1.5 * lines) + "em")
         .attr("text-anchor","middle")
         .text(d.key.value.carbNote)
+        lines += 1;
+    }
+
+    if(lines < 2) {
+      var homemade = "Homemade";
+      if(!d.key.value.homemade) {
+        homemade = d.key.value.nonHomeMadeMealContent;
+        if(!homemade) {
+          homemade = "Eaten out"
+        }
       }
+      parent.append("text")
+        .attr("y", 18)
+        .attr("x", 25)
+        .attr("dy", (1.5 * lines) + "em")
+        .attr("text-anchor","middle")
+        .text(homemade)
+    }
+
   });
 }
