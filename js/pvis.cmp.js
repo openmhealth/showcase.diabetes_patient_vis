@@ -270,5 +270,26 @@ pvis.explorer = [
 		"offset": 0.1,
 
 		"compare": pvis.compare
+	},
+
+	// weight
+
+	{
+		"from": pvis.weight,
+		"to": pvis.pam,
+		"key": "Any",
+		"duration": 32400000,
+		"offset": 0.1,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.weight,
+		"to": pvis.sleep,
+		"key": "Any",
+		"duration": 64800000,
+		"offset": 0.9,
+
+		"compare": pvis.compare
 	}
 ]
