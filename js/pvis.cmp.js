@@ -202,5 +202,14 @@ pvis.explorer = [
 
 		"compare": pvis.compare,
 		"filter": function(v) {return true;}
+	},
+	{
+		"from": pvis.runkeeper,
+		"to": pvis.notes,
+		"key": "duration > 20 minutes",
+		"duration": 32400000,
+		"offset": 0.1,
+
+		"compare": pvis.compare
 	}
 ]

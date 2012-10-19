@@ -46,3 +46,22 @@ pvis.runkeeper.visualize = function(g, d, data, scale) {
     .attr("y", 2 * height / 3)
 		.text(function(d) { return d.type; })
 }
+
+pvis.runkeeper.key_title = pvis.key_title
+
+pvis.runkeeper.filter = function(v, key) {
+  var parts = key.split(' ');
+  return eval(this.value(v)[parts[0]] + parts[1] + (parts[2] * 60))
+}
+
+pvis.runkeeper.simple_vis = function(g) {
+  g.each(function(d, i) {
+    var parent = d3.select(this);
+
+    parent.append("text")
+      .attr("y", 18)
+      .attr("x", 25)
+      .attr("text-anchor","middle")
+      .text((d.key.value.duration / 60).toFixed(0) + "minutes");
+  });
+}
