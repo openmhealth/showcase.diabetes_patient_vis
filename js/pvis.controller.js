@@ -12,7 +12,7 @@ pvis.controller = function(){
     //login
     $('#loginButton').click(self.signIn)
     $('.logout').each(function(){
-      $(this).click(omh.logout)
+      $(this).click(self.logout)
     });
 
     $('.navbar').addClass('ui-disabled');
@@ -156,6 +156,11 @@ pvis.controller = function(){
       }
     })
     return false
+  }
+
+  self.logout = function() {
+    self.clearData();
+    omh.logout();
   }
 
   // Shows minor errors as the accumulate
