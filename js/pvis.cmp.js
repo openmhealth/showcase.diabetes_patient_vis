@@ -213,6 +213,26 @@ pvis.explorer = [
 
 	{
 		"from": pvis.food,
+		"to": pvis.pam,
+		"key": "Eating out",
+		"duration": 3600000,
+		"offset": 0.5,
+
+		"compare": pvis.compare,
+		"filter": function(v) {return !this.value(v).homemade;}
+	},
+	{
+		"from": pvis.food,
+		"to": pvis.glucose,
+		"key": "Any",
+		"duration": 3600000,
+		"offset": 0.1,
+
+		"compare": pvis.compare,
+		"filter": function(v) {return true;}
+	},
+	{
+		"from": pvis.food,
 		"to": pvis.sleep,
 		"key": "Any",
 		"duration": 64800000,
