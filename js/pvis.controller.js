@@ -100,7 +100,6 @@ pvis.controller = function(){
     $.each(omh.payloads, function(k,v) {
       localStorage.removeItem('omh.'+k)
     })
-    localStorage.removeItem('omh.read.timestamp')
   }
 
   self.onComparisonClick = function(d) {
