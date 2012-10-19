@@ -76,7 +76,8 @@ pvis.controller = function(){
 
   self.queryTime = function(payload_id) {
     var d = self.data(payload_id);
-    var ms = 0;
+    // The oldest time we request is 6 months ago
+    var ms = new Date().getTime() - (3600000 * 24 * 30 * 6);
     if(d && d[0]) {
       ms = new Date(d[0].metadata.timestamp).getTime() + 1000;
     }
