@@ -165,6 +165,24 @@ pvis.explorer = [
 	},
 	{
 		"from": pvis.glucose,
+		"to": pvis.pam,
+		"key": "<= 100",
+		"duration": 3600000,
+		"offset": 0.1,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.sleep,
+		"key": "<= 100",
+		"duration": 64800000,
+		"offset": 0.5,
+
+		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
 		"to": pvis.notes,
 		"key": ">= 150",
 		"duration": 3600000,
