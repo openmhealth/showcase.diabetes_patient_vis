@@ -48,3 +48,9 @@ pvis.pam.simple_vis = function(g) {
 			.text(d.key.value.mood);
   });
 }
+
+pvis.pam.visualize = function(g, d, data, scale) {
+
+	var b = new bubble(g, scale(data.res.timestamp));
+	b.addText([data.res.value.mood]);
+}

@@ -211,5 +211,15 @@ pvis.explorer = [
 		"offset": 0.1,
 
 		"compare": pvis.compare
+	},
+	{
+		"from": pvis.glucose,
+		"to": pvis.pam,
+		"key": "Any",
+		"duration": 3600000,
+		"offset": 0.5,
+
+		"compare": pvis.compare,
+		"filter": function(v) {return true;}
 	}
 ]
