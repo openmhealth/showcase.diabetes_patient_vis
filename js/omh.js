@@ -59,11 +59,11 @@ omh.authenticate = function(user, password, callback){
   });
 }
 
-omh.read = function(payloadID, payloadVersion, optional){
+omh.read = function(payloadID, payloadVersion, optional, data){
   if(!omh.initTest())return
   var url = omh.baseurl + '/omh/v1.0/read'
   if(!optional) optional = {}
-	var data = {}
+	if(!data) data = {}
   data.auth_token = omh.token()
   data.requester = omh.requester
 	data.owner = omh.username()

@@ -4,6 +4,8 @@ pvis.controller = function(){
 
   $(document).ready(function(){
 
+    //self.clearData();
+
     //init ohmage
     omh.init("https://showcase.omh.io/app","PatienVis")
 
@@ -25,25 +27,32 @@ pvis.controller = function(){
       $.mobile.showPageLoadingMsg();
 
       $.each(omh.payloads, function(k,v) {
-        omh.read(
-          v.payload_id,
-          v.version,
-          {success:function(res){
-            console.log("read response",res)
-            pvis.controller.data[k] = res.data;
-            self.checkData();
-          },
-          failure:function(e) {
-            if(e) {
-              self.showError(e);
-            } else {
-              self.showFatalError("Server error. Please try again later.")
+          omh.read(
+            v.payload_id,
+            v.version,
+            {
+              success:function(res){
+                console.log("read response",res)
+                pvis.controller.data[k] = res.data.concat(self.data(k));
+                console.log(pvis.controller.data[k].length)
+                self.data(k, pvis.controller.data[k])
+                self.checkData();
+              },
+              failure:function(e) {
+                if(e) {
+                  self.showError(e);
+                } else {
+                  self.showFatalError("Server error. Please try again later.")
+                }
+                pvis.controller.data[k] = self.data(k);
+                self.checkData();
+              }
+            },
+            {
+              't_start': self.queryTime(k).format("isoUtcDateTime")
             }
-            pvis.controller.data[k] = []
-            self.checkData();
-          }
+          )
         })
-      });
     }
 
     //Set up explore filters    
@@ -64,6 +73,34 @@ pvis.controller = function(){
 
     });
   })
+
+  self.queryTime = function(payload_id) {
+    var d = self.data(payload_id);
+    var ms = 0;
+    if(d && d[0]) {
+      ms = new Date(d[0].metadata.timestamp).getTime() + 1000;
+    }
+    var timestamp = new Date();
+    timestamp.setTime(ms);
+    return timestamp;
+  }
+
+  self.data = function(payload_id, data) {
+    if(data)
+      localStorage.setItem('omh.'+payload_id, JSON.stringify(data))
+    var d = localStorage.getItem('omh.'+payload_id);
+    if(!d) {
+      d = '[]';
+    }
+    return JSON.parse(d);
+  }
+
+  self.clearData = function() {
+    $.each(omh.payloads, function(k,v) {
+      localStorage.removeItem('omh.'+k)
+    })
+    localStorage.removeItem('omh.read.timestamp')
+  }
 
   self.onComparisonClick = function(d) {
     $.mobile.changePage($("#comparison"))
