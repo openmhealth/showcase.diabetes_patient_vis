@@ -58,6 +58,15 @@ Array.prototype.min = function( array ){
    return Math.min.apply( Math, array );
 };
 
+// Filter unique values of an array
+Array.prototype.unique = function(keyFn) {
+  if(!keyFn) keyFn = function(k) {return k};
+  var o = {}, i, l = this.length, r = [];
+  for(i=0; i<l;i+=1) o[keyFn(this[i])] = this[i];
+  for(i in o) r.push(o[i]);
+  return r;
+};
+
 var utils = {
   /***************************************************************************
    * 

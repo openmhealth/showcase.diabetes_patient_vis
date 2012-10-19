@@ -33,8 +33,21 @@ pvis.controller = function(){
             {
               success:function(res){
                 console.log("read response",res)
-                pvis.controller.data[k] = res.data.concat(self.data(k));
-                console.log(pvis.controller.data[k].length)
+
+                // concat the new data with the old data and remove duplicates
+                pvis.controller.data[k] = res.data.concat(self.data(k)).unique(
+                  function(d){
+                    return (d.metadata.id) ? d.metadata.id : d.metadata.timestamp
+                  }
+                );
+
+                // sort the data by timestamp
+                pvis.controller.data[k].sort(
+                  function(d1,d2) {
+                    return new Date(d2.metadata.timestamp).getTime() - new Date(d1.metadata.timestamp).getTime();
+                  }
+                );
+
                 self.data(k, pvis.controller.data[k])
                 self.checkData();
               },
