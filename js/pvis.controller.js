@@ -53,6 +53,13 @@ pvis.controller = function(){
               },
               failure:function(e) {
                 if(e) {
+                  $.each(e.errors,function(i, error){
+                    if(error.code == AUTH_TOKEN_ERROR) {
+                      console.log("Authentication Error")
+                      self.logout();
+                    }
+                  })
+
                   self.showError(e);
                 } else {
                   self.showFatalError("Server error. Please try again later.")
