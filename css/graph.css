@@ -9,8 +9,16 @@
 	background:-webkit-gradient(linear,0 0, 0 100%, from(#FFFFFF), to(#DFDFDF));
 }
 
+#comparisons .plot {
+  cursor: pointer;
+}
+
 #comparisons .plot:active {
 	background: #FCE59C;
+}
+
+#explorer .plot {
+  cursor: pointer;
 }
 
 #explorer .plot:active {
