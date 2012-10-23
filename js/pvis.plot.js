@@ -183,9 +183,12 @@ function simpleChart() {
         if(dt.res)
           return dt.res.timestamp + dt.key.timestamp;
         });
-      content.exit().remove();
+      content.exit().transition().attr('opacity',0).remove();
       var enter = content.enter().append("g").attr("class","comp")
         .attr("transform", function(v,i) { return "translate(" + margin.left + "," + (80 + (i*200)) + ")";});
+
+
+      enter.attr('opacity',0).transition().attr('opacity',1)
 
       var bubbleContainer = enter.append("g");
 
