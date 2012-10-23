@@ -107,7 +107,7 @@ pvis.plot = function(cmp, single, c) {
 
 	title.each(function(v,i) {
 			var titleLength = title[0][i].getComputedTextLength()+20;
-			d3.select(titleArrow[0][i]).attr("d", "M 0 0 l "+ titleLength +" 0 c30,35 30,15 0,50 L 0 50")
+			d3.select(titleArrow[0][i]).attr("d", "M 0 0 l "+ titleLength +" 0 l 20 20 s 8 5 0 10 l -20 20 L 0 50")
 	})
 
 	// Draw the 'to' title
