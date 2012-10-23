@@ -15,8 +15,6 @@ pvis.controller = function(){
       $(this).click(self.logout)
     });
 
-    $('.navbar').addClass('ui-disabled');
-
     if(!omh.token())
       $.mobile.changePage($("#login"), {'transition':'none'})
     else{
@@ -27,7 +25,10 @@ pvis.controller = function(){
       $.mobile.showPageLoadingMsg();
 
       $.each(omh.payloads, function(k,v) {
-        self.data[k] = self.data(k);
+        var d = self.data(k);
+        if(d.length != 0) {
+          self.data[k] = d;
+        }
       });
       self.checkData();
 
@@ -97,6 +98,11 @@ pvis.controller = function(){
       pvis.plot(data, true, "#explorer .container")
 
     });
+
+    // Make sure to update plots for other pages when the load if new data has come in
+    $(document).delegate('.ui-page', 'pageshow', function () {
+      self.checkData();
+    });
   })
 
   self.queryTime = function(payload_id) {
@@ -116,7 +122,7 @@ pvis.controller = function(){
       localStorage.setItem('omh.'+payload_id, JSON.stringify(data))
     var d = localStorage.getItem('omh.'+payload_id);
     if(!d) {
-      d = '[]';
+      return [];
     }
     return JSON.parse(d);
   }
@@ -149,10 +155,15 @@ pvis.controller = function(){
         }
     }
 
-    if(count == 7) {
-      $('.navbar').removeClass('ui-disabled');
+    if(self.data.glucose && self.data.food && self.data.pam && self.data.runkeeper) {
       $.mobile.hidePageLoadingMsg();
-      pvis.plot(pvis.cmp);
+      var pageId = $('.ui-page-active').attr('id');
+
+      if(pageId == 'explorer') {
+        $("input[type='checkbox']").change();
+      } else if(pageId == 'comparisons') {
+        pvis.plot(pvis.cmp);
+      }
     }
   }
 
