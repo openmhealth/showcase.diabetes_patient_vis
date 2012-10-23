@@ -37,13 +37,13 @@ pvis.pam.simple_vis = function(g) {
     var parent = d3.select(this);
 
     parent.append("image")
+      .attr("x",-25)
       .attr("width",50)
 			.attr("height",50)
 			.attr("xlink:href", "images/pam/"+d.key.value.photo_id+"_"+d.key.value.mood+"/"+d.key.value.photo_id+"_"+d.key.value.sub_photo_id+".jpg");
 
 	  parent.append("text")
 			.attr("y", 70)
-			.attr("x", 25)
 			.attr("text-anchor","middle")
 			.text(d.key.value.mood);
   });

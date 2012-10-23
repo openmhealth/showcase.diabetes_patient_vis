@@ -30,7 +30,7 @@ function bubble(g, dx) {
 			})
 		);
 		
-		this.group.attr("transform", "translate(0," + (200 - noteBox.height) + ")");	
+		this.group.attr("transform", "translate(0," + (140 - noteBox.height) + ")");
 	}
 }
 

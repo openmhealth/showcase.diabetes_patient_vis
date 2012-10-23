@@ -27,6 +27,11 @@ pvis.controller = function(){
       $.mobile.showPageLoadingMsg();
 
       $.each(omh.payloads, function(k,v) {
+        self.data[k] = self.data(k);
+      });
+      self.checkData();
+
+      $.each(omh.payloads, function(k,v) {
           omh.read(
             v.payload_id,
             v.version,

@@ -79,7 +79,6 @@ pvis.food.simple_vis = function(g) {
     if(pvis.campaign.showPrompt(d.key.value.carbCount)) {
       parent.append("text")
         .attr("y", 18)
-        .attr("x", 25)
         .attr("text-anchor","middle")
         .text("Carbs: " + d.key.value.carbCount + "g")
         lines += 1;
@@ -88,7 +87,6 @@ pvis.food.simple_vis = function(g) {
     if(pvis.campaign.showPrompt(d.key.value.carbNote)) {
       parent.append("text")
         .attr("y", 18)
-        .attr("x", 25)
         .attr("dy", (1.5 * lines) + "em")
         .attr("text-anchor","middle")
         .text(d.key.value.carbNote)
@@ -105,7 +103,6 @@ pvis.food.simple_vis = function(g) {
       }
       parent.append("text")
         .attr("y", 18)
-        .attr("x", 25)
         .attr("dy", (1.5 * lines) + "em")
         .attr("text-anchor","middle")
         .text(homemade)

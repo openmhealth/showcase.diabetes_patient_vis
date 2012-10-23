@@ -36,14 +36,14 @@ pvis.runkeeper.visualize = function(g, d, data, scale) {
 	runkeeperbar.append("svg:rect")
     .attr("class", function(d, i) { return "measure s" + i; })
     .attr("width", function(d) { return x1(d.duration*1000); })
-    .attr("height", height / 3)
+    .attr("height", 70)
     .attr("x", function(d) { return scale(d.start)})
-    .attr("y", height/2);
+    .attr("y", 86);
 	
 	runkeeperbar.append("svg:text")
     .attr("class", "title")
     .attr("x", function(d) { return scale(d.start.getTime()) + 5})
-    .attr("y", 2 * height / 3)
+    .attr("y", height - 45)
 		.text(function(d) { return d.type; })
 }
 
@@ -60,7 +60,6 @@ pvis.runkeeper.simple_vis = function(g) {
 
     parent.append("text")
       .attr("y", 18)
-      .attr("x", 25)
       .attr("text-anchor","middle")
       .text((d.key.value.duration / 60).toFixed(0) + "minutes");
   });

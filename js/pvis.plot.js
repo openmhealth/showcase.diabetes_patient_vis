@@ -1,11 +1,11 @@
 var width = 480,
-    height = 260,
+    height = 175,
 		tickheight = 10,
     margin = {top: 5, right: 20, bottom: 20, left: 20};
 
 var chart = simpleChart()
     .width(width - margin.right - margin.left)
-    .height(height - margin.top - margin.bottom);
+    .height(height);
 
 $(window).on("resize", function() {
 	resizeSVG();
@@ -20,85 +20,106 @@ pvis.plot = function(cmp, single, c) {
     c="#comparisons .container"
 
   chart.single = single
-  
+
   var container = d3.selectAll(c).selectAll("svg")
-      .data(cmp, function(d) { return d.from.payload_id+d.to.payload_id+d.key+d.duration+d.offset; });
-      
+      .data(cmp, function(d) {
+				return d.from.payload_id+d.to.payload_id+d.key+d.duration+d.offset;
+			});
+
+	container.exit().remove();
+
+	// Add the svg object
 	var enter = container.enter().append("svg")
 	    .attr("class", "plot")
 			.attr("viewBox", "0 0 " + width + " " + height)
       .attr("preserveAspectRatio", "xMinYMin");
-      
+
+	// If we are looking at a single comparison, we should be able to click it to view all
   if(single) {
-    enter.on("click", function(d) {
+    container.on("click", function(d) {
       // Show the comparison page for this comparison
       pvis.controller.onComparisonClick(d);
     });
   }
 
+	// Define some filters which are used by the svg object
+	var linearGradient = enter.append("svg:defs")
+		.append("svg:linearGradient")
+			.attr("id", "linearGradient1")
+			.attr("x1","0%")
+			.attr("y1","0%")
+			.attr("x2","0%")
+			.attr("y2","100%")
+			.attr("spreadMethod","pad");
+	linearGradient.append("stop")
+		.attr("offset", "0%")
+		.attr("stop-color","#aaa")
+		.attr("stop-opacity",1);
+	linearGradient.append("stop")
+		.attr("offset", "100%")
+		.attr("stop-color","#666")
+		.attr("stop-opacity",1);
+
+	// Draw the 'from' title
 	var keyTitle = enter.append("g")
-	
+
 	keyTitle.append("rect")
-			.attr("class","res")
-			.attr("height", 50)
-			.attr("width", width);
+		.attr("class","res")
+		.attr("height", 50)
+		.attr("width", width);
 
 	var titleBack = keyTitle.append("rect")
-			.attr("class", "key")
-		  .attr("height", 50);
-			
+		.attr("class", "key")
+	  .attr("height", 50);
+
 	var titleArrow = keyTitle.append("svg:path")
-			.attr("d", function(d) { return "M 0 0 C30,35 30,15 0,50" })
-			.attr("class", "key");
+		.attr("d", function(d) { return "M 0 0 C30,35 30,15 0,50" })
+		.attr("class", "key");
 
 	var title = keyTitle.append("text")
-			.attr("class", "title")
-			.attr("x", 10)
-			.attr("y", 35)
-	    .text(function(d) { return omh.payloads[d.from.payload_id].title; });
-		
-	var texts = keyTitle.select("text")
-	
-	texts.each(function(v,i) {
-			var titleLength = texts[0][i].getComputedTextLength()+20;
+		.attr("class", "title")
+		.attr("x", 10)
+		.attr("y", 35)
+    .text(function(d) { return omh.payloads[d.from.payload_id].title; });
+
+	title.each(function(v,i) {
+			var titleLength = title[0][i].getComputedTextLength()+20;
 			d3.select(titleBack[0][i]).attr("width",titleLength)
 			d3.select(titleArrow[0][i]).attr("transform", "translate(" + ((titleLength-0.5)) + ",0)")
 	})
-	
-	var resTitle = enter.append("g")
+
+	// Draw the 'to' title
+	keyTitle.append("g")
 			.attr("text-anchor", "end")
-			.attr("height", "55")
 	    .attr("transform", "translate(" + (width - margin.left) + "," + 0 + ")")
-			
-	resTitle.append("text")
+		.append("text")
 			.attr("class", "title")
 			.attr("y", 35)
 			.text(function(d) { return omh.payloads[d.to.payload_id].title; })
 
-	var filterTitle = enter.append("g")
-			.attr("height", "23")
-			.attr("transform", "translate(" + 0 + "," + 50 + ")")
-							
+	// Draw the key filter
+	var filterTitle = keyTitle.append("g")
+		.attr("height", "23")
+		.attr("transform", "translate(" + 0 + "," + 50 + ")");
 	filterTitle.append("rect")
-			.attr("class", "filter")
-		  .attr("height", 23)
-			.attr("width", width);
-			
+		.attr("class", "filter")
+		.attr("height", 23)
+		.attr("width", width);
 	filterTitle.append("text")
-			.attr("y", 18)
-			.attr("x", 10)
-			.text(function(d) { return d.from.key_title(d.key); })
+		.attr("y", 18)
+		.attr("x", 10)
+		.text(function(d) { return d.from.key_title(d.key); });
 
-	defineFilters(enter);
+	// Add the initial content and set the height
+	var content = enter.append("g")
+		.attr("class", "content")
 
-	var content = enter.append("g").call(chart);
-	
+	var content = container.select(".content").call(chart);
+
 	content.each(function(v,i) {
-			var height = content[0][i].getBBox().height;
-			d3.select(container[0][i]).attr("viewBox", "0 0 " + width + " " + height)
-	})
-			
-	container.exit().remove()
+		var height = Math.max(content[0][i].getBBox().height, 200);
+		d3.select(container[0][i]).attr("viewBox", "0 0 " + width + " " + height)
+	});
 
   // Sort the comparisons
   d3.selectAll(c).selectAll("svg").sort(function(d1, d2) {
@@ -113,6 +134,7 @@ pvis.plot = function(cmp, single, c) {
     return d1.localeCompare(d2)
   })
 
+	// Resize the svg areas so they fit the window now that we plotted the data
 	resizeSVG();
 }
 
@@ -123,28 +145,6 @@ function resizeSVG() {
   })
 }
 
-function defineFilters(container) {
-
-	var linearGradient = container.append("svg:defs")
-		.append("svg:linearGradient")
-			.attr("id", "linearGradient1")
-			.attr("x1","0%")
-			.attr("y1","0%")
-			.attr("x2","0%")
-			.attr("y2","100%")
-			.attr("spreadMethod","pad");
-
-	linearGradient.append("stop")
-		.attr("offset", "0%")
-		.attr("stop-color","#aaa")
-		.attr("stop-opacity",1);
-
-	linearGradient.append("stop")
-		.attr("offset", "100%")
-		.attr("stop-color","#666")
-		.attr("stop-opacity",1);
-}
-
 function simpleChart() {
 	var duration = 0,
       width = 380,
@@ -152,105 +152,107 @@ function simpleChart() {
 
   function generate(g) {
     g.each(function(d, i) {
-			
+
       var parent = d3.select(this);
+      var data = pvis.calculate.call(d, !chart.single);
 
-			var data = pvis.calculate.call(d, !chart.single);
-			
-			g = parent.selectAll("g").data(data).enter().append("g")
-    			.attr("transform", function(v,i) { return "translate(" + margin.left + "," + i * 180 + ")" })
-			
-			// If there is no data, we just say no data
-			if(!data.length) {
-			  var note = parent.append("g")
-			      .attr("text-anchor", "middle")
-			      .attr("transform", "translate(" + (width / 2 + margin.left) + "," + height / 1.5 + ")");
+      var content = parent.selectAll(".comp").data(data, function(dt,i) {
+        if(dt.res)
+          return dt.res.timestamp + dt.key.timestamp;
+        });
+      content.exit().remove();
+      var enter = content.enter().append("g").attr("class","comp")
+        .attr("transform", function(v,i) { return "translate(" + margin.left + "," + (80 + (i*200)) + ")";});
 
-				note.append("text")
-					  .attr("class", "title")
-					  .text("no data");
-					  
-					  parent.append("rect").attr("height", 305)
-			      
-				return;
-			}
+      var bubbleContainer = enter.append("g");
 
-			// Add the 'from' marker line and data
-			var marker = g.append("g");
+      var bubble = bubbleContainer.append("rect")
+        .attr("height",80)
+        .attr("rx",5)
+        .attr("ry",5)
+        .attr("fill","#A2A2A2")
 
-			var bubble = marker.append("rect")
-					.attr("height",80)
-					.attr("rx",5)
-					.attr("ry",5)
-					.attr("fill","#A2A2A2")
-			
-			var bubbleContent = marker.append("g");
+      var bubbleContent = bubbleContainer.append("g");
       bubbleContent.call(d.from.simple_vis)
 
-			var bottom = height - margin.bottom;
+      var bottom = height - margin.bottom;
 
+      // Align the 'from' data
       bubble.each(function(v,i) {
-        var bubbleWidth = Math.max(60, bubbleContent[0][i].getBBox().width+5);
-        var bubbleHeight = Math.max(30, bubbleContent[0][i].getBBox().height+5);
+        var bubbleWidth = Math.max(60, bubbleContainer[0][i].getBBox().width+5);
+        var bubbleHeight = Math.max(30, bubbleContainer[0][i].getBBox().height+5);
 
-        d3.select(bubbleContent[0][i]).attr("transform", "translate(" + ((bubbleWidth- 60 + 10)/2) + ",5)")
+        d3.select(bubbleContent[0][i]).attr("transform", "translate(" + bubbleWidth/2 + ",4)")
 
-        d3.select(bubble[0][i]).attr("width" ,  bubbleWidth)
-        d3.select(bubble[0][i]).attr("height" ,  bubbleHeight)
+        d3.select(bubble[0][i])
+          .attr("width" ,  bubbleWidth)
+          .attr("height" ,  bubbleHeight)
 
-        d3.select(marker[0][i]).attr("transform", "translate(" + (width * d.offset - bubbleWidth/2) + "," + 80 + ")");
+        d3.select(bubbleContainer[0][i]).attr("transform", "translate(" + (width * d.offset - bubbleWidth/2) + ")");
 
-        d3.select(marker[0][i]).append("svg:line")
-        .attr("transform", "translate(" + bubbleWidth / 2 + ")")
-        .attr("class", "marker")
-        .attr("y1", bubbleHeight)
-        .attr("y2", bottom - 80)
-
+        d3.select(bubbleContainer[0][i]).append("svg:line")
+          .attr("transform", "translate(" + bubbleWidth / 2 + ")")
+          .attr("class", "marker")
+          .attr("y1", bubbleHeight)
+          .attr("y2", bottom)
       });
 
       // Add the 'to' data
-      g.each(function(data) {
+      enter.each(function(data) {
 
         g = d3.select(this);
-        
+
         var key_timestamp = data.key.timestamp.getTime()
 
-  		  // Compute the new x-scale.
-  		  var x0 = d3.time.scale()
-  		      .domain([key_timestamp - (d.duration * d.offset), key_timestamp - (-d.duration * (1 -d.offset))])
-  		      .range([0, width]);
+        // Compute the new x-scale.
+        var x0 = d3.time.scale()
+          .domain([key_timestamp - (d.duration * d.offset), key_timestamp - (-d.duration * (1 -d.offset))])
+          .range([0, width]);
 
-  			d.to.visualize(g, d, data, x0);
+        d.to.visualize(g, d, data, x0);
 
         // Compute the tick format.
         var format = x0.tickFormat(8);
 
         // Update the tick groups.
         var tick = g.selectAll("g.tick")
-            .data(x0.ticks(4));
+          .data(x0.ticks(4));
 
         // Initialize the ticks with the old scale, x0.
         var tickEnter = tick.enter().append("svg:g")
-            .attr("class", "tick")
-            .attr("transform", translate(x0));
+          .attr("class", "tick")
+          .attr("transform", translate(x0));
 
         tickEnter.append("svg:line")
-            .attr("y1", bottom)
-            .attr("y2", bottom + tickheight);
+          .attr("y1", bottom)
+          .attr("y2", bottom + tickheight);
 
         tickEnter.append("svg:text")
-            .attr("text-anchor", "middle")
-            .attr("dy", "1em")
-            .attr("y", bottom + tickheight)
-            .text(format);
-            
-            g.append("svg:line")
-    			      .attr("class", "xaxis")
-    						.attr("x1", 0)
-    						.attr("x2", width)
-    						.attr("y1", bottom)
-    					  .attr("y2", bottom);
-      })
+					.attr("text-anchor", "middle")
+					.attr("dy", "1em")
+					.attr("y", bottom + tickheight)
+					.text(format);
+
+        g.append("svg:line")
+					.attr("class", "xaxis")
+					.attr("x1", 0)
+					.attr("x2", width)
+					.attr("y1", bottom)
+          .attr("y2", bottom);
+			})
+
+			// Show no data if there is nothing
+			if(!data.length) {
+				console.log(height)
+				parent.append("g")
+						.attr("class", "comp")
+						.attr("text-anchor", "middle")
+						.attr("transform", "translate(" + ((width / 2) + margin.left) + "," + height + ")")
+					.append("text")
+						.attr("class", "title")
+						.text("no data");
+			}
+
     });
     d3.timer.flush();
   }

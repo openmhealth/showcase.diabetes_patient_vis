@@ -22,7 +22,6 @@ pvis.weight.simple_vis = function(g) {
 
     parent.append("text")
       .attr("y", 18)
-      .attr("x", 25)
       .attr("text-anchor","middle")
       .text(d.key.value)
 
