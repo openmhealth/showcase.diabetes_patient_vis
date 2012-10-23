@@ -2,10 +2,19 @@
 .plot { 
 	font: 20px sans-serif;
 	background: #FFFFFF;
-	border: 1px solid #CCCCCC;
+	border: 1px solid #AAAAAA;
+	margin-bottom: 10px;
 	color: #000000;
-	background:-moz-linear-gradient(top, #FFFFFF, #DDDDDD);
-	background:-webkit-gradient(linear,0 0, 0 100%, from(#FFFFFF), to(#DDDDDD));
+	background:-moz-linear-gradient(top, #FFFFFF, #DFDFDF);
+	background:-webkit-gradient(linear,0 0, 0 100%, from(#FFFFFF), to(#DFDFDF));
+}
+
+#comparisons .plot:active {
+	background: #FCE59C;
+}
+
+#explorer .plot:active {
+	background: #FCE59C;
 }
 
 .plot .title { font-size: 28px; font-weight: bold; }

@@ -43,22 +43,49 @@ pvis.plot = function(cmp, single, c) {
   }
 
 	// Define some filters which are used by the svg object
-	var linearGradient = enter.append("svg:defs")
-		.append("svg:linearGradient")
-			.attr("id", "linearGradient1")
-			.attr("x1","0%")
-			.attr("y1","0%")
-			.attr("x2","0%")
-			.attr("y2","100%")
-			.attr("spreadMethod","pad");
+  var defs = enter.append("svg:defs");
+
+	var linearGradient = defs.append("svg:linearGradient")
+		.attr("id", "linearGradient1")
+		.attr("x1","0%")
+		.attr("y1","0%")
+		.attr("x2","0%")
+		.attr("y2","100%")
+		.attr("spreadMethod","pad");
+
 	linearGradient.append("stop")
 		.attr("offset", "0%")
 		.attr("stop-color","#aaa")
 		.attr("stop-opacity",1);
+
 	linearGradient.append("stop")
 		.attr("offset", "100%")
 		.attr("stop-color","#666")
 		.attr("stop-opacity",1);
+
+  var dropshadow = defs.append("svg:filter")
+	  .attr("id", "dropshadow")
+	  .attr("height","120%")
+
+  dropshadow.append("feGaussianBlur")
+    .attr("in", "SourceAlpha")
+    .attr("stdDeviation",3)
+
+  dropshadow.append("feOffset")
+    .attr("dx",2)
+    .attr("dy",2)
+    .attr("result","offsetblur")
+
+  dropshadow.append("feComponentTransfer")
+    .append("feFuncA")
+    .attr("type","linear")
+    .attr("slope",0.2)
+
+  var merge = dropshadow.append("feMerge");
+  merge.append("feMergeNode")
+ 
+  merge.append("feMergeNode")
+    .attr("in","SourceGraphic")
 
 	// Draw the 'from' title
 	var keyTitle = enter.append("g")
@@ -68,13 +95,9 @@ pvis.plot = function(cmp, single, c) {
 		.attr("height", 50)
 		.attr("width", width);
 
-	var titleBack = keyTitle.append("rect")
-		.attr("class", "key")
-	  .attr("height", 50);
-
 	var titleArrow = keyTitle.append("svg:path")
-		.attr("d", function(d) { return "M 0 0 C30,35 30,15 0,50" })
-		.attr("class", "key");
+		.attr("class", "key")
+		.attr("filter","url(#dropshadow)")
 
 	var title = keyTitle.append("text")
 		.attr("class", "title")
@@ -84,8 +107,7 @@ pvis.plot = function(cmp, single, c) {
 
 	title.each(function(v,i) {
 			var titleLength = title[0][i].getComputedTextLength()+20;
-			d3.select(titleBack[0][i]).attr("width",titleLength)
-			d3.select(titleArrow[0][i]).attr("transform", "translate(" + ((titleLength-0.5)) + ",0)")
+			d3.select(titleArrow[0][i]).attr("d", "M 0 0 l "+ titleLength +" 0 c30,35 30,15 0,50 L 0 50")
 	})
 
 	// Draw the 'to' title
@@ -104,7 +126,8 @@ pvis.plot = function(cmp, single, c) {
 	filterTitle.append("rect")
 		.attr("class", "filter")
 		.attr("height", 23)
-		.attr("width", width);
+		.attr("width", width)
+               .attr("filter","url(#dropshadow)");
 	filterTitle.append("text")
 		.attr("y", 18)
 		.attr("x", 10)
@@ -117,7 +140,7 @@ pvis.plot = function(cmp, single, c) {
 	var content = container.select(".content").call(chart);
 
 	content.each(function(v,i) {
-		var height = Math.max(content[0][i].getBBox().height, 200);
+		var height = Math.max(content[0][i].getBBox().height, 190) - 15;
 		d3.select(container[0][i]).attr("viewBox", "0 0 " + width + " " + height)
 	});
 
@@ -168,9 +191,11 @@ function simpleChart() {
 
       var bubble = bubbleContainer.append("rect")
         .attr("height",80)
+        .attr("stroke","#A2A2A2")
+        .attr("stroke-width",1)
         .attr("rx",5)
         .attr("ry",5)
-        .attr("fill","#A2A2A2")
+        .attr("fill","lightsteelblue")
 
       var bubbleContent = bubbleContainer.append("g");
       bubbleContent.call(d.from.simple_vis)

@@ -1,6 +1,4 @@
-.plot{
-	background-color: lightgrey;
-}
+.ui-page { background: #EFEFEF;}
 
 #loginDialog .msg{
     font-weight: bold;

@@ -6,6 +6,8 @@ function bubble(g, dx) {
 		.attr("fill", "#D0D0D0")
 		.attr("stroke-width",1)
 		.attr("dx", dx)
+               .attr("filter","url(#dropshadow)")
+		
 
 	this.addText = function(lines) {
 

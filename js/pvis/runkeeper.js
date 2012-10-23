@@ -34,6 +34,7 @@ pvis.runkeeper.visualize = function(g, d, data, scale) {
 	var runkeeperbar = measure.enter();
 				
 	runkeeperbar.append("svg:rect")
+    .attr("filter","url(#dropshadow)")
     .attr("class", function(d, i) { return "measure s" + i; })
     .attr("width", function(d) { return x1(d.duration*1000); })
     .attr("height", 70)
