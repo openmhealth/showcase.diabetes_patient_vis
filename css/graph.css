@@ -13,16 +13,8 @@
   cursor: pointer;
 }
 
-#comparisons .plot:active {
-	background: #FCE59C;
-}
-
 #explorer .plot {
   cursor: pointer;
-}
-
-#explorer .plot:active {
-	background: #FCE59C;
 }
 
 .plot .title { font-size: 28px; font-weight: bold; }
