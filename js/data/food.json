@@ -1,0 +1,2152 @@
+{
+    "result": "success",
+    "metadata": {
+        "count": 32
+    },
+    "data": [
+        {
+            "metadata": {
+                "id": "efdb723a-e7d4-43a1-bda1-ed37137fea96",
+                "timestamp": "2012-10-18T09:05:34.800-07:00",
+                "location": {
+                    "time": 1350576342000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00519378948957,
+                    "longitude": -118.43131933361292,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350576293730,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350576293000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 40
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "bacon burger with fries"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 62
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "bacon burger with fries"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 51
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "bacon burger with fries"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "289eb5e3-e42a-460b-ad1f-e766bf914459"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "Pepe's"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "0edb1b99-e4e5-4d66-80bc-7a9b8bfc08fb",
+                "timestamp": "2012-10-17T12:37:00.064-07:00",
+                "location": {
+                    "time": 1350502621862,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0690921,
+                    "longitude": -118.4431958,
+                    "accuracy": 53.54800033569336,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350502553871,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350502553000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 28
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "tostada salad"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 27
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "tostada salad"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 23
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "tostada salad"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "39b08913-add7-472c-ac12-6602ddadb13c"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "Ackerman"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "6a0346d1-ad56-40fe-ba29-78837edbaed7",
+                "timestamp": "2012-10-16T14:07:29.814-07:00",
+                "location": {
+                    "time": 1350421655000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.070657291449606,
+                    "longitude": -118.44434992410243,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350421624809,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350421624000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 128
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Panda Express"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 67
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 35
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "0ac5483f-2057-45eb-a31a-43bcb9d89036"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "panda express"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "f3bfa592-10a9-41c7-a30f-ab28fa850f2f",
+                "timestamp": "2012-10-16T09:53:15.104-07:00",
+                "location": {
+                    "time": 1350406404000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00008778553456,
+                    "longitude": -118.43630203977227,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350406354752,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350406020000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 22
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "honey nut toasted oats"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "971bf265-134b-4b75-8b03-cc3205e0e5f2",
+                "timestamp": "2012-10-15T19:22:43.692-07:00",
+                "location": {
+                    "time": 1350354164040,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0426459,
+                    "longitude": -118.4690801,
+                    "accuracy": 31.5,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350354126629,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350353700000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 32
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "sushi"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 10
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "ab48641f-2f56-44c8-83e6-8e6815975a91"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "hara sushi"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "82c6b922-03ea-454f-91f1-47eada5c8d2e",
+                "timestamp": "2012-10-14T17:23:22.365-07:00",
+                "location": {
+                    "time": 1350260624000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.99679478723556,
+                    "longitude": -118.42237751930952,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350260536964,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350253500000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 134
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "red vines, root beer, and popcorn"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 20
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "popcorn"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": "0"
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "Theater food"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "4d4b70ef-602b-4b04-9aef-1ce641c22c81",
+                "timestamp": "2012-10-14T13:20:24.397-07:00",
+                "location": {
+                    "time": 1350246028000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000146207399666,
+                    "longitude": -118.43630941584706,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350245994274,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350245994000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 31
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Fruit Smoothie"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "121a6f93-33c8-4474-a610-3a2eacb488ab"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "44f98895-9c3a-4ee9-965a-85fffa6db0ca",
+                "timestamp": "2012-10-13T13:40:29.723-07:00",
+                "location": {
+                    "time": 1350160835000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00014381855726,
+                    "longitude": -118.43632182106376,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350160800704,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350160800000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 31
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Fruit Smoothie"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "605823b4-8ef8-4fa2-a92b-81fa67b988ca"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "e8abf890-935d-4aac-948b-445558df84c4",
+                "timestamp": "2012-10-12T12:34:47.995-07:00",
+                "location": {
+                    "time": 1350070494000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06954865902662,
+                    "longitude": -118.44308769330382,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350070429307,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1350070200000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 83
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Pumpkin Smash Smoothie"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 10
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "20101b17-2db0-426e-b8ed-618553b29b0d"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "jamba juice"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "84d6ff48-d12c-48dd-97c6-2aa17a7e177c",
+                "timestamp": "2012-10-11T14:23:40.882-07:00",
+                "location": {
+                    "time": 1349990659000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.069350929930806,
+                    "longitude": -118.44285962171853,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349985665996,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349987340000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 127
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "mushroom pepperoni sausage pizza"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 66
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 58
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "61a3e29f-c916-46e5-9c23-78a030b9c116"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "California Pizza Kitchen"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "80249e13-cf4e-4429-ad6e-70c2961730ff",
+                "timestamp": "2012-10-10T21:05:18.354-07:00",
+                "location": {
+                    "time": 1349928322000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000132963992655,
+                    "longitude": -118.43623364344239,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349928272643,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349927400000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 100
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Chips and Sandwich"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "657667f4-7972-4cde-8693-46dd6a6bd100"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "be523fb7-12a9-4499-8cd6-d087124c56e7",
+                "timestamp": "2012-10-10T12:58:52.549-07:00",
+                "location": {
+                    "time": 1349899138000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.062328026629984,
+                    "longitude": -118.44707286916673,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349898317466,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349898317000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 103
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "tortilla, rice, beans"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 36
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "tortilla, chicken, cheese, sour cream"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 62
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "chicken"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "d40bda25-69f1-40a6-9952-5b56d170c015"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "chipotle"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "6989adf8-2338-43cd-a5e1-2f9450da1564",
+                "timestamp": "2012-10-10T00:08:38.431-07:00",
+                "location": {
+                    "time": 1349852924000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0001169545576,
+                    "longitude": -118.43627387657762,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349852884116,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349852884000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 20
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Strawberries"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "94f57798-ba36-4759-8b63-b995756fdd91"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "cd55066a-ebc3-4a7b-9308-376bde6e428f",
+                "timestamp": "2012-10-09T13:13:50.414-07:00",
+                "location": {
+                    "time": 1349813657000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06954522244632,
+                    "longitude": -118.44296967610717,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349813566017,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349813566000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 16
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Chicken Caesar Salad"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 4
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 8
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "c0a7092d-8d42-4f06-8dcc-7ea3445b5ce4"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "Ackerman"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "6cca84d9-eba8-4865-9b64-8e60390afcdb",
+                "timestamp": "2012-10-08T21:48:19.429-07:00",
+                "location": {
+                    "time": 1349758108000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00023057125509,
+                    "longitude": -118.4362815041095,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349758079522,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349757480000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 20
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Strawberries"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "7e89ae5b-be78-4bdb-ad63-541cf640b4aa",
+                "timestamp": "2012-10-08T21:47:58.039-07:00",
+                "location": {
+                    "time": 1349758084000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00021020323038,
+                    "longitude": -118.43629650771618,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349756265450,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349756265000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": "25"
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "bacon, steak"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 36
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "bacon, steak"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "27fdc6d3-704a-4738-8566-e5bca425ba06"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "dc1eebb0-64a0-414d-a4c2-b392b7f5d2a9",
+                "timestamp": "2012-10-08T12:48:46.049-07:00",
+                "location": {
+                    "time": 1349725729000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.069455955177546,
+                    "longitude": -118.4428019542247,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349725274446,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349725274000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 48
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "Hot Pastrami Sandwich"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 30
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 33
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "9d7d1352-28bb-484c-8686-e24d16d5a2cb"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "subway"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "2c977c49-528e-43ff-aa80-71df5b99e556",
+                "timestamp": "2012-10-07T15:38:59.334-07:00",
+                "location": {
+                    "time": 1349649546000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.61395441927016,
+                    "longitude": -117.8257889393717,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349647323220,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349647323000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 100
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "fish burrito"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 6
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 60
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "2d974972-55d8-403a-b377-60a33ee7eb54"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "Bear Flag Fish Co"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "f0b84454-aa25-4b7c-943b-e60cd042fc0d",
+                "timestamp": "2012-10-07T10:23:44.566-07:00",
+                "location": {
+                    "time": 1349630632000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.58174905180931,
+                    "longitude": -117.84422644414008,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349630379052,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349630379000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 40
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "eggs bacon"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 40
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "eggs bacon"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "bb7cca3b-99ea-42c1-ae83-49cea3898ed1",
+                "timestamp": "2012-10-06T19:04:00.285-07:00",
+                "location": {
+                    "time": 1349575451000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.58169624581933,
+                    "longitude": -117.84431638196111,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349575255927,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349573700000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 125
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "rice chicken"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 120
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "rice chicken"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 85
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "rice chicken"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "932197d5-047e-4178-9b39-6e6dbb4bf8c7",
+                "timestamp": "2012-10-06T14:19:59.613-07:00",
+                "location": {
+                    "time": 1349558406000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.05856924597174,
+                    "longitude": -118.13318878412247,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349558362538,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349558362000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "ca7b1fb4-bf58-40a7-8ce4-fa6cb91ca0b4"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NBC seafood. dimsum"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "64411e01-cd1e-4503-bdb1-1cf05bdf24af",
+                "timestamp": "2012-10-05T21:20:16.346-07:00",
+                "location": {
+                    "time": 1349497222000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000148763880134,
+                    "longitude": -118.43627111054957,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349497145383,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349497145000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 3
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "almond butter"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 9
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "almond butter"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 4
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "almond butter"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "11afc9fa-41cd-4b7d-8443-8a1a037731cb",
+                "timestamp": "2012-10-05T21:10:27.962-07:00",
+                "location": {
+                    "time": 1349496635000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000096335075796,
+                    "longitude": -118.43624655157328,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349496340692,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349496340000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 10
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "chicken salad"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "2d8de555-c601-458e-b319-07a0b739809d"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "California fresh"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "91b3ef9b-817e-4300-a23d-fc4fa12b25f8",
+                "timestamp": "2012-10-05T21:05:36.942-07:00",
+                "location": {
+                    "time": 1349496346000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00011837948114,
+                    "longitude": -118.43633472919464,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349496315758,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349496315000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 25
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "apple"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "NOT_DISPLAYED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "efa835a7-648f-47bc-b8a1-33de7e95091d",
+                "timestamp": "2012-10-05T15:02:36.823-07:00",
+                "location": {
+                    "time": 1349474563000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06943453941494,
+                    "longitude": -118.44295165501535,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349471826504,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349471826000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 42
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "burrito"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 13
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "burrito"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 42
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "burrito"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "600eaf9a-ce4b-46c8-a207-86dcfbe2637c"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "rendezvous"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "a037e007-e5d3-43ab-b70c-cd8aa831044f",
+                "timestamp": "2012-10-05T12:18:44.054-07:00",
+                "location": {
+                    "time": 1349464730000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06948973424733,
+                    "longitude": -118.44320001080632,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349464700001,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349464700000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 5
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "egg"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 6
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "egg"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "83041393-7a68-4932-a4a4-bbca84570912",
+                "timestamp": "2012-10-04T20:25:29.232-07:00",
+                "location": {
+                    "time": 1349407540000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.01664212811738,
+                    "longitude": -118.40884041041136,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349404394242,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349404394000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 230
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "pizza"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 100
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "pizza"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 100
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "pizza"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "Bella Vista"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "9a12fa5d-d461-4a53-ba70-4a14d3e88072",
+                "timestamp": "2012-10-04T13:59:03.006-07:00",
+                "location": {
+                    "time": 1349384358000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00018723681569,
+                    "longitude": -118.43624630011618,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349384010551,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349384010000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 72
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "oatmeal, pumpkin soup"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 5
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "oatmeal"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 11
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "oatmeal"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "65d02146-ecdd-4dc6-aac0-bffdf31de493"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "d777f4e1-c598-4dee-8ae5-528de40fe70d",
+                "timestamp": "2012-10-04T10:34:53.516-07:00",
+                "location": {
+                    "time": 1349372096000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00016892235726,
+                    "longitude": -118.4363248385489,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349371686490,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349371686000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 25
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "grapefruit"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 34
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "scrambled eggs, turkey bacon."
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 57
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "scrambled eggs, turkey bacon."
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "7b660155-7f12-4bdf-80ae-ab7bb45b299e"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "a3625090-9af2-4ceb-bd4c-5cd8970a32a9",
+                "timestamp": "2012-10-03T16:02:23.871-07:00",
+                "location": {
+                    "time": 1349305354000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00020018685609,
+                    "longitude": -118.43630799092352,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349305322372,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349305322000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 100
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "toffee"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "510282ec-61d0-4211-8ee1-f61ac70f82dd",
+                "timestamp": "2012-10-03T10:27:09.380-07:00",
+                "location": {
+                    "time": 1349285235000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00019297841936,
+                    "longitude": -118.43628846108913,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349284495759,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349283540000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 51
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "banana"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "banana"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 2
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "banana"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "NOT_DISPLAYED"
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "0a831d7e-886c-4efe-b1ae-23a48c3f6545",
+                "timestamp": "2012-10-02T22:04:37.527-07:00",
+                "location": {
+                    "time": 1349240686000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000091389752924,
+                    "longitude": -118.4363798238337,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349240089872,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "timestamp",
+                        "value": 1349240640000
+                    },
+                    {
+                        "prompt_id": "carbCount",
+                        "value": 78
+                    },
+                    {
+                        "prompt_id": "carbNote",
+                        "value": "frozen yogurt"
+                    },
+                    {
+                        "prompt_id": "fatCount",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "fatNote",
+                        "value": "SKIPPED"
+                    },
+                    {
+                        "prompt_id": "proteinCount",
+                        "value": 13
+                    },
+                    {
+                        "prompt_id": "proteinNote",
+                        "value": "frozen yogurt"
+                    },
+                    {
+                        "prompt_id": "mealPhoto",
+                        "value": "bc82a9c0-2fd1-4965-b108-b3a8aab99ce3"
+                    },
+                    {
+                        "prompt_id": "fullness",
+                        "value": 1
+                    },
+                    {
+                        "prompt_id": "homeMade",
+                        "value": 0
+                    },
+                    {
+                        "prompt_id": "nonHomeMadeMealContent",
+                        "value": "yogurtland"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,1792 @@
+{
+    "result": "success",
+    "metadata": {
+        "count": 55
+    },
+    "data": [
+        {
+            "metadata": {
+                "id": "96b52892-467a-441b-8419-e224f59bd77a",
+                "timestamp": "2012-10-17T16:34:07.191-07:00",
+                "location": {
+                    "time": 1350516850000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.069382110610604,
+                    "longitude": -118.44303513877094,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350516839603,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 2,
+                                "mood": "excited",
+                                "score": 3,
+                                "photo_id": 3
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "7b2dfda3-c048-44b2-a341-674c86fdaa46",
+                "timestamp": "2012-10-14T17:23:48.712-07:00",
+                "location": {
+                    "time": 1350260573000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.996763145551085,
+                    "longitude": -118.42227458953857,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350260628715,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 2,
+                                "score": 13,
+                                "mood": "gloomy",
+                                "photo_id": 13
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "00e9ce50-3cf5-4231-884a-011b32b5cf27",
+                "timestamp": "2012-10-13T13:39:59.078-07:00",
+                "location": {
+                    "time": 1350160806000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00032017379999,
+                    "longitude": -118.43628661707044,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350160791005,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 3,
+                                "mood": "glad",
+                                "score": 8,
+                                "photo_id": 8
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "2660d8b4-e0d5-4aa0-87e1-5c8fb33d98ee",
+                "timestamp": "2012-10-11T22:39:37.329-07:00",
+                "location": {
+                    "time": 1350020342779,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0002124,
+                    "longitude": -118.436364,
+                    "accuracy": 30,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1350020377330,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 2,
+                                "score": 3,
+                                "mood": "excited",
+                                "photo_id": 3
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "817a6924-df3d-4eb9-b24d-feaab4dd12b0",
+                "timestamp": "2012-10-11T10:13:54.312-07:00",
+                "location": {
+                    "time": 1349975641000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00020911358297,
+                    "longitude": -118.43629005365074,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349975623884,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 2,
+                                "mood": "tense",
+                                "score": 2,
+                                "photo_id": 2
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "05f2b059-d0e2-4384-bbc9-838a7f59bc91",
+                "timestamp": "2012-10-10T12:45:15.905-07:00",
+                "location": {
+                    "time": 1349898322000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.061171282082796,
+                    "longitude": -118.44609688036144,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349898308150,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 1,
+                                "mood": "happy",
+                                "score": 7,
+                                "photo_id": 7
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "5bc6df34-79c9-4e0a-801d-050059905f4a",
+                "timestamp": "2012-10-10T08:21:38.419-07:00",
+                "location": {
+                    "time": 1349882502000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000239917077124,
+                    "longitude": -118.43623464927077,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349882489869,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 3,
+                                "mood": "delighted",
+                                "score": 4,
+                                "photo_id": 4
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "d58b371f-df58-4fcf-bb46-8f6173b3057c",
+                "timestamp": "2012-10-09T13:12:42.936-07:00",
+                "location": {
+                    "time": 1349813568000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06939158216119,
+                    "longitude": -118.44292910769582,
+                    "accuracy": 15,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349813552931,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 2,
+                                "mood": "tired",
+                                "score": 14,
+                                "photo_id": 14
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "afc36be4-a47b-4fcd-b018-3a3be4bc9417",
+                "timestamp": "2012-10-09T12:24:45.846-07:00",
+                "location": {
+                    "time": 1349810688000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06943558715284,
+                    "longitude": -118.44310336746275,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349810677497,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 2,
+                                "mood": "satisfied",
+                                "score": 12,
+                                "photo_id": 12
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "a9e0da2f-094b-4615-abfa-297c09fffc54",
+                "timestamp": "2012-10-09T12:24:28.249-07:00",
+                "location": {
+                    "time": 1349801881000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.07171789556742,
+                    "longitude": -118.44401020556688,
+                    "accuracy": 30,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349810668251,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "sub_photo_id": 3,
+                                "score": 7,
+                                "mood": "happy",
+                                "photo_id": 7
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "8f63064f-dcc9-412b-8ffe-86ec2ad85d77",
+                "timestamp": "2012-10-08T10:47:39.003-07:00",
+                "location": {
+                    "time": 1349718478000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.07255202066153,
+                    "longitude": -118.44425512477756,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349718451489,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 13,
+                                "photo_id": "gloomy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "5a5b3bfb-bfa4-4d34-a893-194457f33b79",
+                "timestamp": "2012-10-07T10:19:37.217-07:00",
+                "location": {
+                    "time": 1349630382000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.58176900073886,
+                    "longitude": -117.84430523402989,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349630367849,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 12,
+                                "photo_id": "satisfied"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "768f368c-2517-41b4-9a77-6f86dcab1e8a",
+                "timestamp": "2012-10-06T19:00:46.459-07:00",
+                "location": {
+                    "time": 1349575259000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.58171606902033,
+                    "longitude": -117.84398429095745,
+                    "accuracy": 15,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349575237017,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 12,
+                                "photo_id": "satisfied"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "474d3565-9858-40df-8fae-e8db466ec462",
+                "timestamp": "2012-10-06T14:19:09.437-07:00",
+                "location": {
+                    "time": 1349558352000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.058488360606134,
+                    "longitude": -118.13323161564767,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349558341698,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 15,
+                                "photo_id": "sleepy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "d7536fc2-2993-48b1-90be-e12b434c8d0b",
+                "timestamp": "2012-10-06T11:34:53.489-07:00",
+                "location": {
+                    "time": 1349548498000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00014771614224,
+                    "longitude": -118.4363401774317,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349548485483,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 10,
+                                "photo_id": "sad"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "bf1efac0-188d-489b-944a-f9f83e9ac720",
+                "timestamp": "2012-10-06T01:30:14.346-07:00",
+                "location": {
+                    "time": 1349512218000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000159283168614,
+                    "longitude": -118.43624311499298,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349512207418,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 14,
+                                "photo_id": "tired"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "636eea43-5f05-401a-aadc-9880aed952af",
+                "timestamp": "2012-10-05T13:37:01.208-07:00",
+                "location": {
+                    "time": 1349469424000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06969416886568,
+                    "longitude": -118.44362111762166,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349469412929,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 13,
+                                "photo_id": "gloomy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "683186fa-ad71-4a0c-abc5-1c8af112935b",
+                "timestamp": "2012-10-05T12:18:16.121-07:00",
+                "location": {
+                    "time": 1349464707000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06988896429539,
+                    "longitude": -118.4433532319963,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349464687530,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 3,
+                                "photo_id": "excited"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "e63bc25e-eb8b-49ab-bbe2-f5943ad6c3fb",
+                "timestamp": "2012-10-04T10:35:26.200-07:00",
+                "location": {
+                    "time": 1349372132000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00016976054758,
+                    "longitude": -118.43632039614022,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349372112612,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 7,
+                                "photo_id": "happy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "bf958206-b98b-4f33-9e17-bcb79d9eb2f6",
+                "timestamp": "2012-10-03T10:27:22.554-07:00",
+                "location": {
+                    "time": 1349285247000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0001737838611,
+                    "longitude": -118.43627496622503,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1349285233479,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 2,
+                                "photo_id": "tense"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "0bf48d82-1981-46a3-86ab-049a2c5a9d52",
+                "timestamp": "2012-09-29T20:04:51.660-07:00",
+                "location": {
+                    "time": 1348974298000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 35.44934227131307,
+                    "longitude": -120.90633834712207,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348974285337,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 4,
+                                "photo_id": "delighted"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "9e18ef4b-a282-4af5-bf73-01cfff47be15",
+                "timestamp": "2012-09-29T06:45:47.721-07:00",
+                "location": {
+                    "time": 1348926352000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 35.44568373821676,
+                    "longitude": -120.89991227723658,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348926341401,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 14,
+                                "photo_id": "tired"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "0516a59e-75c6-4d69-bbae-9dbf69856442",
+                "timestamp": "2012-09-28T13:35:39.086-07:00",
+                "location": {
+                    "time": 1348864542000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 35.44561211485416,
+                    "longitude": -120.89994865469635,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348864503556,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 13,
+                                "photo_id": "gloomy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "4ac74209-cce0-43fb-833a-af084d82a1d5",
+                "timestamp": "2012-09-28T09:56:39.572-07:00"
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348851391580,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 2,
+                                "photo_id": "tense"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "225dcb3e-65c3-42c2-a196-3a815df19c2a",
+                "timestamp": "2012-09-27T13:16:06.266-07:00",
+                "location": {
+                    "time": 1348777046000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.19190449640155,
+                    "longitude": -118.93747681751847,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348776957560,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 12,
+                                "photo_id": "satisfied"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "820ff792-c01c-4ff1-a880-18ab2fe4833c",
+                "timestamp": "2012-09-26T10:47:53.826-07:00",
+                "location": {
+                    "time": 1348681674092,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0690406,
+                    "longitude": -118.4435283,
+                    "accuracy": 27,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348681657874,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 9,
+                                "photo_id": "miserable"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "ab0e12bb-5ec3-439d-ac3b-58159bf255ab",
+                "timestamp": "2012-09-26T09:56:52.382-07:00",
+                "location": {
+                    "time": 1348678621000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00015760678798,
+                    "longitude": -118.43638636171818,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348678601863,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 10,
+                                "photo_id": "sad"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "97f4203e-d0c4-4001-ae5a-4b6fbeec9d22",
+                "timestamp": "2012-09-25T22:40:27.095-07:00",
+                "location": {
+                    "time": 1348638027421,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0469611,
+                    "longitude": -118.2559049,
+                    "accuracy": 30,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348638014602,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 7,
+                                "photo_id": "happy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "1e5849ac-4394-4fbc-ab59-ba52465ea5ce",
+                "timestamp": "2012-09-25T18:31:11.267-07:00",
+                "location": {
+                    "time": 1348623075000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0670925937593,
+                    "longitude": -118.41746932826936,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348623039175,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 5,
+                                "photo_id": "frustrated"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "18518a44-c454-4e9f-b3c0-e1e6a5688447",
+                "timestamp": "2012-09-25T14:35:27.111-07:00",
+                "location": {
+                    "time": 1348608929000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.069287311285734,
+                    "longitude": -118.44305173493922,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348608913525,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 2,
+                                "photo_id": "tense"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "e7f131c3-d2b8-4aa2-ac47-0c1943e4ad31",
+                "timestamp": "2012-09-25T10:49:33.410-07:00",
+                "location": {
+                    "time": 1348595344354,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0692321,
+                    "longitude": -118.4430222,
+                    "accuracy": 50.845001220703125,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348595373415,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 2,
+                                "photo_id": "tense"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "32a73457-3b37-4504-9266-8f6e8e9533ac",
+                "timestamp": "2012-09-25T09:52:41.626-07:00",
+                "location": {
+                    "time": 1348591964000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00016175583005,
+                    "longitude": -118.43637839891016,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348591947901,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 7,
+                                "photo_id": "happy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "6f5332fb-0d22-45a9-8467-433bd813dc83",
+                "timestamp": "2012-09-24T22:20:48.126-07:00",
+                "location": {
+                    "time": 1348550456000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.04297622386366,
+                    "longitude": -118.47110671922565,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348550432809,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 9,
+                                "photo_id": "miserable"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "bc424dc8-b50d-46bf-9204-dabc70f31e64",
+                "timestamp": "2012-09-24T12:44:48.360-07:00",
+                "location": {
+                    "time": 1348515935000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06901921611279,
+                    "longitude": -118.44299364835024,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348515874686,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 13,
+                                "photo_id": "gloomy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "fb811ee0-16df-4693-9a12-f28c00372d2d",
+                "timestamp": "2012-09-24T11:39:40.036-07:00",
+                "location": {
+                    "time": 1348511981839,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0692455,
+                    "longitude": -118.4429908,
+                    "accuracy": 43.12900161743164,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348511972619,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 3,
+                                "photo_id": "excited"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "d0bc27fb-d1f2-4455-a527-001faae83bf4",
+                "timestamp": "2012-09-23T17:03:12.268-07:00",
+                "location": {
+                    "time": 1348445002000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.131743697449565,
+                    "longitude": -117.0519438944757,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348444931727,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 14,
+                                "photo_id": "tired"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "582e41b4-87e4-4baf-bc9a-a0014677804d",
+                "timestamp": "2012-09-23T11:49:09.673-07:00",
+                "location": {
+                    "time": 1348426152000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.13169717788696,
+                    "longitude": -117.05212955363095,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348426141767,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 14,
+                                "photo_id": "tired"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "7db2e670-7962-4bc0-a998-f4b2fc1b1d36",
+                "timestamp": "2012-09-23T09:17:06.188-07:00",
+                "location": {
+                    "time": 1348417029000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.13174403272569,
+                    "longitude": -117.05193023197353,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348417011650,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 3,
+                                "photo_id": "excited"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "c04ed0bb-6edd-4562-8955-1a22cd6c1f88",
+                "timestamp": "2012-09-22T22:13:46.087-07:00",
+                "location": {
+                    "time": 1348377235000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.13172190450132,
+                    "longitude": -117.05195303075016,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348377216261,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 10,
+                                "photo_id": "sad"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "717d43b8-b0b2-4c3f-9695-468254d9f8f5",
+                "timestamp": "2012-09-22T19:41:27.010-07:00",
+                "location": {
+                    "time": 1348368089000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.13154269941151,
+                    "longitude": -117.05184808932245,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348368071745,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 6,
+                                "photo_id": "angry"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "41603fce-932f-436c-b526-389958e7bfff",
+                "timestamp": "2012-09-22T05:37:46.932-07:00",
+                "location": {
+                    "time": 1348317469000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.13162333332002,
+                    "longitude": -117.05187222920358,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348317442265,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 9,
+                                "photo_id": "miserable"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "240366ba-a91a-473e-9786-86ccbd27f10e",
+                "timestamp": "2012-09-22T01:26:58.022-07:00",
+                "location": {
+                    "time": 1348302480000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 33.13199498690665,
+                    "longitude": -117.05190600827336,
+                    "accuracy": 10,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348302409619,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 7,
+                                "photo_id": "happy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "3da8e5d6-b432-4ca7-83df-fe11285ec744",
+                "timestamp": "2012-09-21T16:03:59.138-07:00",
+                "location": {
+                    "time": 1348268645000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00023304391652,
+                    "longitude": -118.43637613579631,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348268627352,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 1,
+                                "photo_id": "afraid"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "220f9aa6-bcd9-4c47-af91-1e920285dc6e",
+                "timestamp": "2012-09-21T11:37:01.367-07:00",
+                "location": {
+                    "time": 1348252625000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00013686157763,
+                    "longitude": -118.43640714883804,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348252593213,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 7,
+                                "photo_id": "happy"
+                            },
+                            {
+                                "score": 8,
+                                "photo_id": "glad"
+                            },
+                            {
+                                "score": 16,
+                                "photo_id": "serene"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "c12ff49a-848b-4f19-acbe-f8a774880719",
+                "timestamp": "2012-09-20T22:32:55.230-07:00",
+                "location": {
+                    "time": 1348205578000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00016934145242,
+                    "longitude": -118.43627689406276,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348205563081,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 12,
+                                "photo_id": "satisfied"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "36bf441a-9959-4b41-b936-f507993645b6",
+                "timestamp": "2012-09-20T20:15:18.368-07:00",
+                "location": {
+                    "time": 1348197323000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00016682688147,
+                    "longitude": -118.43622459098697,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348197310544,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 5,
+                                "photo_id": "frustrated"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "6b0ae187-fa7a-4707-9478-f646651f04eb",
+                "timestamp": "2012-09-20T13:42:48.088-07:00",
+                "location": {
+                    "time": 1348173760000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06664914917201,
+                    "longitude": -118.44490606337786,
+                    "accuracy": 15,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348173768090,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 3,
+                                "photo_id": "excited"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "8d57354e-389b-42d7-8e4d-349bb05d1bd7",
+                "timestamp": "2012-09-20T08:30:58.173-07:00",
+                "location": {
+                    "time": 1348155062000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.000269756652415,
+                    "longitude": -118.43621612526476,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348155034942,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 7,
+                                "photo_id": "happy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "c6a7541e-ca02-4f1e-af3d-eaefcf7a6452",
+                "timestamp": "2012-09-19T17:56:07.784-07:00",
+                "location": {
+                    "time": 1348102571000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.03994402848184,
+                    "longitude": -118.43969486653805,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348102556320,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 13,
+                                "photo_id": "gloomy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "4e86bf31-c9fe-4491-952c-5a8b0e668ea4",
+                "timestamp": "2012-09-19T14:18:53.260-07:00",
+                "location": {
+                    "time": 1348089535176,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0692418,
+                    "longitude": -118.4429924,
+                    "accuracy": 42.933998107910156,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348089502646,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 13,
+                                "photo_id": "gloomy"
+                            },
+                            {
+                                "score": 14,
+                                "photo_id": "tired"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "a030dfe5-79a1-4ef3-a970-c451ed169c02",
+                "timestamp": "2012-09-19T11:14:08.182-07:00",
+                "location": {
+                    "time": 1348078451000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.04868258163333,
+                    "longitude": -118.4318245947361,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348078434089,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 9,
+                                "photo_id": "miserable"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "47da42cd-bf9d-45aa-bf98-7cd10c14e07c",
+                "timestamp": "2012-09-19T11:00:22.189-07:00",
+                "location": {
+                    "time": 1348077627000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.048640630207956,
+                    "longitude": -118.43162066303194,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348077615333,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 5,
+                                "photo_id": "frustrated"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "cbd2529e-5d89-4066-82a8-484edda35059",
+                "timestamp": "2012-09-18T21:13:18.363-07:00",
+                "location": {
+                    "time": 1348028006000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.00017508305609,
+                    "longitude": -118.4362574480474,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348027986287,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 4,
+                                "photo_id": "delighted"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "2798421f-341d-4423-a53d-71b085b436e9",
+                "timestamp": "2012-09-18T13:58:53.831-07:00",
+                "location": {
+                    "time": 1348001944000,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.06935315113515,
+                    "longitude": -118.4430783893913,
+                    "accuracy": 5,
+                    "provider": "gps"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1348001918337,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 8,
+                                "photo_id": "glad"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "id": "26ac369f-bb70-4a51-9c50-fa63819af2d4",
+                "timestamp": "2012-09-10T10:47:22.818-07:00",
+                "location": {
+                    "time": 1347299186735,
+                    "timezone": "America/Los_Angeles",
+                    "latitude": 34.0002679,
+                    "longitude": -118.4362153,
+                    "accuracy": 21,
+                    "provider": "network"
+                }
+            },
+            "data": {
+                "survey_launch_context": {
+                    "launch_time": 1347299242820,
+                    "launch_timezone": "America/Los_Angeles",
+                    "active_triggers": []
+                },
+                "responses": [
+                    {
+                        "prompt_id": "photo_id",
+                        "value": [
+                            {
+                                "score": 5,
+                                "photo_id": "frustrated"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

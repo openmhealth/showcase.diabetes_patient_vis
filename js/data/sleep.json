@@ -1,0 +1,591 @@
+{
+    "result": "success",
+    "metadata": {
+        "count": 53
+    },
+    "data": [
+        {
+            "metadata": {
+                "timestamp": "2012-10-18T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121018",
+                "totalLying": 590,
+                "totalSleep": 494,
+                "efficiency": 0.84
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-17T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121017",
+                "totalLying": 442,
+                "totalSleep": 390,
+                "efficiency": 0.88
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-15T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121015",
+                "totalLying": 399,
+                "totalSleep": 320,
+                "efficiency": 0.8
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-14T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121014",
+                "totalLying": 451,
+                "totalSleep": 392,
+                "efficiency": 0.87
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-13T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121013",
+                "totalLying": 377,
+                "totalSleep": 337,
+                "efficiency": 0.89
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-12T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121012",
+                "totalLying": 522,
+                "totalSleep": 429,
+                "efficiency": 0.82
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-11T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121011",
+                "totalLying": 603,
+                "totalSleep": 447,
+                "efficiency": 0.74
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-10T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121010",
+                "totalLying": 399,
+                "totalSleep": 332,
+                "efficiency": 0.83
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-09T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121009",
+                "totalLying": 458,
+                "totalSleep": 397,
+                "efficiency": 0.87
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-08T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121008",
+                "totalLying": 586,
+                "totalSleep": 408,
+                "efficiency": 0.7
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-06T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121006",
+                "totalLying": 426,
+                "totalSleep": 337,
+                "efficiency": 0.79
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-05T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121005",
+                "totalLying": 579,
+                "totalSleep": 391,
+                "efficiency": 0.68
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-04T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121004",
+                "totalLying": 679,
+                "totalSleep": 564,
+                "efficiency": 0.83
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-03T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121003",
+                "totalLying": 499,
+                "totalSleep": 346,
+                "efficiency": 0.69
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-10-02T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20121002",
+                "totalLying": 542,
+                "totalSleep": 365,
+                "efficiency": 0.67
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-30T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120930",
+                "totalLying": 685,
+                "totalSleep": 542,
+                "efficiency": 0.79
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-29T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120929",
+                "totalLying": 311,
+                "totalSleep": 265,
+                "efficiency": 0.85
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-28T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120928",
+                "totalLying": 569,
+                "totalSleep": 446,
+                "efficiency": 0.78
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-27T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120927",
+                "totalLying": 514,
+                "totalSleep": 440,
+                "efficiency": 0.86
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-26T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120926",
+                "totalLying": 475,
+                "totalSleep": 333,
+                "efficiency": 0.7
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-25T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120925",
+                "totalLying": 558,
+                "totalSleep": 440,
+                "efficiency": 0.79
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-24T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120924",
+                "totalLying": 476,
+                "totalSleep": 451,
+                "efficiency": 0.95
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-23T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120923",
+                "totalLying": 48,
+                "totalSleep": 2,
+                "efficiency": 0.04
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-22T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120922",
+                "totalLying": 274,
+                "totalSleep": 188,
+                "efficiency": 0.69
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-21T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120921",
+                "totalLying": 415,
+                "totalSleep": 295,
+                "efficiency": 0.71
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-20T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120920",
+                "totalLying": 431,
+                "totalSleep": 345,
+                "efficiency": 0.8
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-19T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120919",
+                "totalLying": 554,
+                "totalSleep": 443,
+                "efficiency": 0.8
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-18T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120918",
+                "totalLying": 540,
+                "totalSleep": 396,
+                "efficiency": 0.73
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-17T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120917",
+                "totalLying": 570,
+                "totalSleep": 445,
+                "efficiency": 0.78
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-16T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120916",
+                "totalLying": 594,
+                "totalSleep": 489,
+                "efficiency": 0.82
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-15T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120915",
+                "totalLying": 463,
+                "totalSleep": 376,
+                "efficiency": 0.81
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-14T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120914",
+                "totalLying": 499,
+                "totalSleep": 400,
+                "efficiency": 0.8
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-13T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120913",
+                "totalLying": 559,
+                "totalSleep": 456,
+                "efficiency": 0.82
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-12T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120912",
+                "totalLying": 555,
+                "totalSleep": 362,
+                "efficiency": 0.65
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-11T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120911",
+                "totalLying": 504,
+                "totalSleep": 349,
+                "efficiency": 0.69
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-10T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120910",
+                "totalLying": 441,
+                "totalSleep": 372,
+                "efficiency": 0.84
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-09T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120909",
+                "totalLying": 446,
+                "totalSleep": 397,
+                "efficiency": 0.89
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-08T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120908",
+                "totalLying": 443,
+                "totalSleep": 337,
+                "efficiency": 0.76
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-07T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120907",
+                "totalLying": 485,
+                "totalSleep": 418,
+                "efficiency": 0.86
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-06T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120906",
+                "totalLying": 506,
+                "totalSleep": 394,
+                "efficiency": 0.78
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-05T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120905",
+                "totalLying": 597,
+                "totalSleep": 533,
+                "efficiency": 0.89
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-04T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120904",
+                "totalLying": 404,
+                "totalSleep": 313,
+                "efficiency": 0.77
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-03T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120903",
+                "totalLying": 600,
+                "totalSleep": 413,
+                "efficiency": 0.69
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-02T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120902",
+                "totalLying": 552,
+                "totalSleep": 486,
+                "efficiency": 0.88
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-09-01T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120901",
+                "totalLying": 518,
+                "totalSleep": 389,
+                "efficiency": 0.75
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-30T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120830",
+                "totalLying": 453,
+                "totalSleep": 424,
+                "efficiency": 0.94
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-29T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120829",
+                "totalLying": 472,
+                "totalSleep": 414,
+                "efficiency": 0.88
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-28T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120828",
+                "totalLying": 494,
+                "totalSleep": 416,
+                "efficiency": 0.84
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-27T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120827",
+                "totalLying": 548,
+                "totalSleep": 375,
+                "efficiency": 0.68
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-26T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120826",
+                "totalLying": 366,
+                "totalSleep": 317,
+                "efficiency": 0.87
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-25T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120825",
+                "totalLying": 445,
+                "totalSleep": 331,
+                "efficiency": 0.74
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-24T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120824",
+                "totalLying": 454,
+                "totalSleep": 326,
+                "efficiency": 0.72
+            }
+        },
+        {
+            "metadata": {
+                "timestamp": "2012-08-14T00:00:00.000-07:00"
+            },
+            "data": {
+                "date": "20120814",
+                "totalLying": 417,
+                "totalSleep": 312,
+                "efficiency": 0.75
+            }
+        }
+    ]
+}

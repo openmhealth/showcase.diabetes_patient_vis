@@ -1,0 +1,281 @@
+{
+    "result": "success",
+    "metadata": {
+        "count": 21
+    },
+    "data": [
+        {
+            "metadata": {
+                "id": "125912506",
+                "timestamp": "2012-10-19T09:53:49.000-07:00"
+            },
+            "data": {
+                "duration": 1946.807,
+                "start_time": "Fri, 19 Oct 2012 09:53:49",
+                "total_distance": 10138.6128157491,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/125912506"
+            }
+        },
+        {
+            "metadata": {
+                "id": "125502498",
+                "timestamp": "2012-10-17T09:48:13.000-07:00"
+            },
+            "data": {
+                "duration": 1974.722,
+                "start_time": "Wed, 17 Oct 2012 09:48:13",
+                "total_distance": 10142.8072928286,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/125502498"
+            }
+        },
+        {
+            "metadata": {
+                "id": "123976969",
+                "timestamp": "2012-10-10T08:46:28.000-07:00"
+            },
+            "data": {
+                "duration": 2031.752,
+                "start_time": "Wed, 10 Oct 2012 08:46:28",
+                "total_distance": 10038.637204214,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/123976969"
+            }
+        },
+        {
+            "metadata": {
+                "id": "123857275",
+                "timestamp": "2012-10-09T18:58:31.000-07:00"
+            },
+            "data": {
+                "duration": 1796.245,
+                "start_time": "Tue, 9 Oct 2012 18:58:31",
+                "total_distance": 10242.9220245296,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/123857275"
+            }
+        },
+        {
+            "metadata": {
+                "id": "123739849",
+                "timestamp": "2012-10-09T09:13:30.000-07:00"
+            },
+            "data": {
+                "duration": 1930.795,
+                "start_time": "Tue, 9 Oct 2012 09:13:30",
+                "total_distance": 10054.3172475545,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/123739849"
+            }
+        },
+        {
+            "metadata": {
+                "id": "123520900",
+                "timestamp": "2012-10-08T09:50:41.000-07:00"
+            },
+            "data": {
+                "duration": 1957.615,
+                "start_time": "Mon, 8 Oct 2012 09:50:41",
+                "total_distance": 10071.2152904153,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/123520900"
+            }
+        },
+        {
+            "metadata": {
+                "id": "122283867",
+                "timestamp": "2012-10-02T18:57:45.000-07:00"
+            },
+            "data": {
+                "duration": 1848.999,
+                "start_time": "Tue, 2 Oct 2012 18:57:45",
+                "total_distance": 10248.3581529882,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/122283867"
+            }
+        },
+        {
+            "metadata": {
+                "id": "122194497",
+                "timestamp": "2012-10-02T10:28:10.000-07:00"
+            },
+            "data": {
+                "duration": 1967.799,
+                "start_time": "Tue, 2 Oct 2012 10:28:10",
+                "total_distance": 10062.8998508285,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/122194497"
+            }
+        },
+        {
+            "metadata": {
+                "id": "120475124",
+                "timestamp": "2012-09-24T19:29:50.000-07:00"
+            },
+            "data": {
+                "duration": 885.907,
+                "start_time": "Mon, 24 Sep 2012 19:29:50",
+                "total_distance": 4796.50292985207,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/120475124"
+            }
+        },
+        {
+            "metadata": {
+                "id": "120367867",
+                "timestamp": "2012-09-24T09:48:09.000-07:00"
+            },
+            "data": {
+                "duration": 2160.201,
+                "start_time": "Mon, 24 Sep 2012 09:48:09",
+                "total_distance": 10040.7862163672,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/120367867"
+            }
+        },
+        {
+            "metadata": {
+                "id": "117422849",
+                "timestamp": "2012-09-12T09:26:37.000-07:00"
+            },
+            "data": {
+                "duration": 1942.748,
+                "start_time": "Wed, 12 Sep 2012 09:26:37",
+                "total_distance": 10128.4548455196,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/117422849"
+            }
+        },
+        {
+            "metadata": {
+                "id": "117142922",
+                "timestamp": "2012-09-11T09:29:06.000-07:00"
+            },
+            "data": {
+                "duration": 1912.712,
+                "start_time": "Tue, 11 Sep 2012 09:29:06",
+                "total_distance": 10106.5601905564,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/117142922"
+            }
+        },
+        {
+            "metadata": {
+                "id": "116064769",
+                "timestamp": "2012-09-07T10:15:06.000-07:00"
+            },
+            "data": {
+                "duration": 2217.91,
+                "start_time": "Fri, 7 Sep 2012 10:15:06",
+                "total_distance": 10143.4481583027,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/116064769"
+            }
+        },
+        {
+            "metadata": {
+                "id": "115902283",
+                "timestamp": "2012-09-06T18:25:42.000-07:00"
+            },
+            "data": {
+                "duration": 1554.588,
+                "start_time": "Thu, 6 Sep 2012 18:25:42",
+                "total_distance": 10260.2086807428,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/115902283"
+            }
+        },
+        {
+            "metadata": {
+                "id": "115794710",
+                "timestamp": "2012-09-06T09:25:16.000-07:00"
+            },
+            "data": {
+                "duration": 1828.09,
+                "start_time": "Thu, 6 Sep 2012 09:25:16",
+                "total_distance": 10098.2104458657,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/115794710"
+            }
+        },
+        {
+            "metadata": {
+                "id": "115551733",
+                "timestamp": "2012-09-05T10:45:46.000-07:00"
+            },
+            "data": {
+                "duration": 2121.901,
+                "start_time": "Wed, 5 Sep 2012 10:45:46",
+                "total_distance": 10066.4684355556,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/115551733"
+            }
+        },
+        {
+            "metadata": {
+                "id": "115369911",
+                "timestamp": "2012-09-04T21:02:55.000-07:00"
+            },
+            "data": {
+                "duration": 631.882,
+                "start_time": "Tue, 4 Sep 2012 21:02:55",
+                "total_distance": 1407.67630758069,
+                "type": "Running",
+                "uri": "/fitnessActivities/115369911"
+            }
+        },
+        {
+            "metadata": {
+                "id": "113819301",
+                "timestamp": "2012-08-29T17:38:02.000-07:00"
+            },
+            "data": {
+                "duration": 800.615,
+                "start_time": "Wed, 29 Aug 2012 17:38:02",
+                "total_distance": 4108.75405871182,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/113819301"
+            }
+        },
+        {
+            "metadata": {
+                "id": "113718548",
+                "timestamp": "2012-08-29T09:58:38.000-07:00"
+            },
+            "data": {
+                "duration": 1823.564,
+                "start_time": "Wed, 29 Aug 2012 09:58:38",
+                "total_distance": 10042.0059724304,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/113718548"
+            }
+        },
+        {
+            "metadata": {
+                "id": "113538836",
+                "timestamp": "2012-08-28T18:16:16.000-07:00"
+            },
+            "data": {
+                "duration": 1657.245,
+                "start_time": "Tue, 28 Aug 2012 18:16:16",
+                "total_distance": 10734.180282927,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/113538836"
+            }
+        },
+        {
+            "metadata": {
+                "id": "113417701",
+                "timestamp": "2012-08-28T09:33:04.000-07:00"
+            },
+            "data": {
+                "duration": 1661.225,
+                "start_time": "Tue, 28 Aug 2012 09:33:04",
+                "total_distance": 10049.0852224351,
+                "type": "Cycling",
+                "uri": "/fitnessActivities/113417701"
+            }
+        }
+    ]
+}

@@ -1,0 +1,206 @@
+{
+    "result": "success",
+    "metadata": {
+        "count": 18
+    },
+    "data": [
+        {
+            "metadata": {
+                "id": "14730",
+                "timestamp": "2012-10-18T20:10:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 169
+            }
+        },
+        {
+            "metadata": {
+                "id": "14255",
+                "timestamp": "2012-10-16T10:07:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 170.2
+            }
+        },
+        {
+            "metadata": {
+                "id": "14169",
+                "timestamp": "2012-10-15T10:36:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 168.6
+            }
+        },
+        {
+            "metadata": {
+                "id": "14067",
+                "timestamp": "2012-10-14T11:17:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 168.8
+            }
+        },
+        {
+            "metadata": {
+                "id": "14055",
+                "timestamp": "2012-10-13T09:11:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 170.2
+            }
+        },
+        {
+            "metadata": {
+                "id": "14014",
+                "timestamp": "2012-10-12T10:07:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 171.2
+            }
+        },
+        {
+            "metadata": {
+                "id": "13933",
+                "timestamp": "2012-10-11T09:54:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 168.2
+            }
+        },
+        {
+            "metadata": {
+                "id": "13896",
+                "timestamp": "2012-10-10T08:32:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 166.8
+            }
+        },
+        {
+            "metadata": {
+                "id": "13814",
+                "timestamp": "2012-10-09T08:59:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 166.4
+            }
+        },
+        {
+            "metadata": {
+                "id": "13399",
+                "timestamp": "2012-10-06T08:46:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 170.4
+            }
+        },
+        {
+            "metadata": {
+                "id": "13383",
+                "timestamp": "2012-10-05T10:01:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 172
+            }
+        },
+        {
+            "metadata": {
+                "id": "13338",
+                "timestamp": "2012-10-04T14:33:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 173.2
+            }
+        },
+        {
+            "metadata": {
+                "id": "13337",
+                "timestamp": "2012-10-04T10:13:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 172.2
+            }
+        },
+        {
+            "metadata": {
+                "id": "13296",
+                "timestamp": "2012-10-03T10:36:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 172.8
+            }
+        },
+        {
+            "metadata": {
+                "id": "13218",
+                "timestamp": "2012-10-01T09:47:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 171.4
+            }
+        },
+        {
+            "metadata": {
+                "id": "13153",
+                "timestamp": "2012-09-27T09:18:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 170.4
+            }
+        },
+        {
+            "metadata": {
+                "id": "13120",
+                "timestamp": "2012-09-26T09:46:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 173.2
+            }
+        },
+        {
+            "metadata": {
+                "id": "13085",
+                "timestamp": "2012-09-25T09:35:00.000-07:00"
+            },
+            "data": {
+                "timeslot": null,
+                "comment": "",
+                "weight": 170.8
+            }
+        }
+    ]
+}
