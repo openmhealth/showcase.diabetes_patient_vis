@@ -30,63 +30,32 @@ omh.initTest = function(){
 
 //callback (optional) can be an object with success and failure functions  
 omh.authenticate = function(user, password, callback){
-  if(!omh.initTest())return
   omh.username(user)
-  var url = omh.baseurl + '/omh/v1.0/authenticate'
-  $.post(url,{
-    user:user,
-    password:password,
-    requester:omh.requester
-  },function(res){
-    //res = $.parseJSON(res)
-    if(res.auth_token){
-      omh.token(res.auth_token)
-      if(callback && callback.success)
-        callback.success(res)
-    } else {
-      if(callback && callback.failure)
-        callback.failure(res)
-    }
-  }).fail(function(jqXHR, textStatus) {
-    try {
-      res = $.parseJSON(jqXHR.responseText)
-      if(callback && callback.failure)
-        callback.failure(res)
-    } catch (e) {
-        console.log(e);
-        callback.failure()
-    }
-  });
+  setTimeout(
+    function() {
+      var res = {
+        'auth_token':'go us!'
+      }
+      if(res.auth_token){
+        omh.token(res.auth_token)
+        if(callback && callback.success)
+          callback.success(res)
+      } else {
+        if(callback && callback.failure)
+          callback.failure(res)
+      }
+    }, 500
+  );
 }
 
 omh.read = function(payloadID, payloadVersion, optional, data){
-  if(!omh.initTest())return
-  var url = omh.baseurl + '/omh/v1.0/read'
-  if(!optional) optional = {}
-	if(!data) data = {}
-  data.auth_token = omh.token()
-  data.requester = omh.requester
-	data.owner = omh.username()
-  data.payload_id = payloadID
-  data.payload_version = payloadVersion
-  $.ajax({
-    url: url,
-    data:data,
-    type:'POST',
-    success: optional.success
-  }).fail(function(jqXHR, textStatus) {
-    try {
-	    res = $.parseJSON(jqXHR.responseText)
-      if(optional.failure) {
-        optional.failure(res)
-      }
-    } catch(e) {
-      console.log(e)
-      if(optional.failure) {
-        optional.failure()
-      }
+  $.each(omh.payloads, function(v) {
+    if(omh.payloads[v].payload_id == payloadID) {
+      $.getJSON("/js/data/"+v+".json", function(json) {
+        optional.success(json)
+      });
     }
-	});
+  })
 }
 
 omh.logout = function(){
